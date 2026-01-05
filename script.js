@@ -1,16 +1,16 @@
 // Typewriter effect
-const roles = ['Software Developer', 'Python Expert', 'Payment Integration Specialist', 'Bot Developer'];
+const roles = ['Software Engineer', 'Python Expert', 'Payment Integration Specialist', 'Bot Developer'];
 let roleIndex = 0, charIndex = 0, isDeleting = false;
 const typewriter = document.querySelector('.typewriter');
 
 function type() {
     const currentRole = roles[roleIndex];
-    typewriter.textContent = isDeleting 
-        ? currentRole.substring(0, charIndex--) 
+    typewriter.textContent = isDeleting
+        ? currentRole.substring(0, charIndex--)
         : currentRole.substring(0, charIndex++);
-    
+
     let delay = isDeleting ? 50 : 100;
-    
+
     if (!isDeleting && charIndex === currentRole.length) {
         delay = 2000;
         isDeleting = true;

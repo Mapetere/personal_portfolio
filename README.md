@@ -1,6 +1,6 @@
 # Nyasha Mapetere - Personal Portfolio
 
-A modern, responsive portfolio website showcasing my projects and skills as a software developer.
+A modern, responsive portfolio website showcasing my projects and skills as a software engineer.
 
 ## Live Demo
 
