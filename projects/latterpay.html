@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="LatterPay - A production-grade WhatsApp payment bot for donations with Paynow integration">
+    <title>LatterPay | Nyasha Mapetere</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .project-hero {
+            padding: 160px 24px 80px;
+            text-align: center
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--accent);
+            margin-bottom: 40px;
+            font-weight: 500
+        }
+
+        .back-link:hover {
+            opacity: .8
+        }
+
+        .project-hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 20px
+        }
+
+        .project-hero p {
+            color: var(--text2);
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 40px
+        }
+
+        .project-badges {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap
+        }
+
+        .badge {
+            padding: 8px 16px;
+            background: rgba(99, 102, 241, .1);
+            border-radius: 9999px;
+            font-size: .85rem;
+            color: var(--accent);
+            font-family: var(--mono)
+        }
+
+        .project-section {
+            padding: 60px 24px
+        }
+
+        .project-section h2 {
+            font-size: 1.75rem;
+            margin-bottom: 24px;
+            color: var(--accent)
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-top: 40px
+        }
+
+        .feature-card {
+            background: rgba(26, 26, 37, .8);
+            border-radius: 16px;
+            padding: 28px;
+            border: 1px solid rgba(255, 255, 255, .05)
+        }
+
+        .feature-card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 10px
+        }
+
+        .feature-card p {
+            color: var(--text2);
+            font-size: .95rem;
+            line-height: 1.7
+        }
+
+        .arch-diagram {
+            background: var(--bg2);
+            border-radius: 16px;
+            padding: 40px;
+            font-family: var(--mono);
+            font-size: .9rem;
+            overflow-x: auto;
+            color: var(--text2);
+            line-height: 1.8
+        }
+
+        .code-block {
+            background: var(--bg2);
+            border-radius: 12px;
+            padding: 20px;
+            font-family: var(--mono);
+            font-size: .85rem;
+            overflow-x: auto;
+            margin: 20px 0
+        }
+
+        .endpoints-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px
+        }
+
+        .endpoints-table th,
+        .endpoints-table td {
+            padding: 16px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255, 255, 255, .05)
+        }
+
+        .endpoints-table th {
+            color: var(--accent);
+            font-weight: 600
+        }
+
+        .endpoints-table td {
+            color: var(--text2)
+        }
+
+        .method {
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-family: var(--mono);
+            font-size: .8rem;
+            font-weight: 600
+        }
+
+        .method.get {
+            background: rgba(34, 197, 94, .2);
+            color: #22c55e
+        }
+
+        .method.post {
+            background: rgba(59, 130, 246, .2);
+            color: #3b82f6
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-gradient"></div>
+    <div class="bg-grid"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo"><span class="logo-bracket">&lt;</span>NM<span
+                    class="logo-bracket">/&gt;</span></a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../index.html#projects" class="nav-link active">Projects</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <a href="../index.html#projects" class="back-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+            Back to Projects
+        </a>
+        <h1><span class="gradient-text">LatterPay</span></h1>
+        <p>A production-grade WhatsApp bot for managing donations and payments with end-to-end encryption, resilience
+            patterns, and comprehensive error handling.</p>
+        <div class="project-badges">
+            <span class="badge">Python 3.9+</span>
+            <span class="badge">Flask</span>
+            <span class="badge">WhatsApp API</span>
+            <span class="badge">Paynow</span>
+            <span class="badge">Docker</span>
+            <span class="badge">Terraform</span>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="project-section">
+            <h2>The Problem</h2>
+            <p style="color:var(--text2);font-size:1.05rem;line-height:1.8">
+                Organizations in Zimbabwe needed a simple, accessible way to collect donations via mobile money.
+                WhatsApp is the most popular messaging platform, and mobile money (EcoCash, OneMoney) is the primary
+                payment method. LatterPay bridges these two, creating a seamless donation experience.
+            </p>
+        </section>
+
+        <section class="project-section">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>WhatsApp Integration</h3>
+                    <p>Full WhatsApp Business API integration via Pygwan. Supports text messages, interactive buttons,
+                        and list menus.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Payment Processing</h3>
+                    <p>Paynow integration supporting EcoCash, OneMoney, TeleCash, and USD payments with real-time status
+                        updates.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>End-to-End Encryption</h3>
+                    <p>Meta Flow encryption with AES-256-CBC and RSA for secure data exchange.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Circuit Breaker</h3>
+                    <p>Prevents cascading failures when external services are down. Auto-recovers after 60 seconds.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Rate Limiting</h3>
+                    <p>Token bucket algorithm protects against abuse with 30 requests per user limit.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Analytics Dashboard</h3>
+                    <p>Admin panel with PDF/Excel report generation, payment statistics, and daily summaries.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>Architecture</h2>
+            <div class="arch-diagram">
+                <pre>┌─────────────────────────────────────────────────────────┐
+│                     Rate Limiter                         │
+│              (Token Bucket - 30 req/user)               │
+└───────────────────────┬─────────────────────────────────┘
+                        │
+┌───────────────────────▼─────────────────────────────────┐
+│                  Circuit Breaker                         │
+│        (5 failures = OPEN, 60s recovery)                │
+└───────────────────────┬─────────────────────────────────┘
+                        │
+┌───────────────────────▼─────────────────────────────────┐
+│                 Retry with Backoff                       │
+│         (3 retries, exponential delay)                  │
+└───────────────────────┬─────────────────────────────────┘
+                        ▼
+              ┌─────────────────┐
+              │  External APIs  │
+              │  (WhatsApp,     │
+              │   Paynow)       │
+              └─────────────────┘</pre>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>API Endpoints</h2>
+            <table class="endpoints-table">
+                <thead>
+                    <tr>
+                        <th>Endpoint</th>
+                        <th>Method</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>/</code></td>
+                        <td><span class="method get">GET</span></td>
+                        <td>Service status</td>
+                    </tr>
+                    <tr>
+                        <td><code>/health</code></td>
+                        <td><span class="method get">GET</span></td>
+                        <td>Health check with component status</td>
+                    </tr>
+                    <tr>
+                        <td><code>/metrics</code></td>
+                        <td><span class="method get">GET</span></td>
+                        <td>Request/error statistics</td>
+                    </tr>
+                    <tr>
+                        <td><code>/webhook</code></td>
+                        <td><span class="method get">GET</span></td>
+                        <td>WhatsApp webhook verification</td>
+                    </tr>
+                    <tr>
+                        <td><code>/webhook</code></td>
+                        <td><span class="method post">POST</span></td>
+                        <td>WhatsApp message handling</td>
+                    </tr>
+                    <tr>
+                        <td><code>/payment-result</code></td>
+                        <td><span class="method post">POST</span></td>
+                        <td>Paynow IPN handler</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="project-section">
+            <h2>Deployment</h2>
+            <p style="color:var(--text2);margin-bottom:20px">LatterPay can be deployed using Docker, Railway, Heroku, or
+                Terraform:</p>
+            <div class="code-block">
+                # Docker<br>
+                docker build -t latterpay .<br>
+                docker run -p 8010:8010 --env-file .env latterpay<br><br>
+                # Railway<br>
+                railway login && railway deploy<br><br>
+                # Terraform<br>
+                cd terraform && terraform init && terraform apply
+            </div>
+        </section>
+
+        <section class="project-section" style="text-align:center;padding-bottom:100px">
+            <a href="https://github.com/Mapetere/latterpay" class="btn btn-primary btn-large" target="_blank">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+                View on GitHub
+            </a>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>Designed & Built by <strong>Nyasha Mapetere</strong></p>
+        <p class="footer-year">© 2026</p>
+    </footer>
+</body>
+
+</html>
