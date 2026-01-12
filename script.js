@@ -1,11 +1,15 @@
 // Scroll to top on page load/refresh
-window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-};
 if ('scrollRestoration' in history) {
     history.scrollRestoration = 'manual';
 }
 window.scrollTo(0, 0);
+
+// Ensure scroll to top after page fully loads
+window.addEventListener('load', function () {
+    setTimeout(function () {
+        window.scrollTo(0, 0);
+    }, 50);
+});
 
 // Typewriter effect
 const roles = ['Software Engineer', 'Python Expert', 'Payment Integration Specialist', 'Bot Developer'];
