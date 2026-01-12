@@ -1,3 +1,12 @@
+// Scroll to top on page load/refresh
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+};
+if ('scrollRestoration' in history) {
+    history.scrollRestoration = 'manual';
+}
+window.scrollTo(0, 0);
+
 // Typewriter effect
 const roles = ['Software Engineer', 'Python Expert', 'Payment Integration Specialist', 'Bot Developer'];
 let roleIndex = 0, charIndex = 0, isDeleting = false;
