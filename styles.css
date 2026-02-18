@@ -578,7 +578,7 @@ section {
 .wa-avatar {
     width: 40px;
     height: 40px;
-    background: var(--primary);
+    background: #064e3b;
     color: #fff;
     border-radius: 50%;
     display: flex;
@@ -590,7 +590,8 @@ section {
 
 .wa-name {
     font-weight: 600;
-    font-size: .95rem
+    font-size: .95rem;
+    color: #fff
 }
 
 .wa-status {
@@ -610,7 +611,8 @@ section {
     padding: 10px 14px;
     border-radius: 12px;
     font-size: .85rem;
-    line-height: 1.4
+    line-height: 1.4;
+    color: #fff
 }
 
 .wa-message p {
@@ -955,6 +957,9 @@ section {
     font-weight: 700;
     font-size: 0.9rem;
     transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
 }
 
 .story-link:hover {
