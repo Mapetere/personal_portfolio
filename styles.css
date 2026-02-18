@@ -1240,3 +1240,13 @@ section {
         width: 240px
     }
 }
+/* CV Print Styles */
+@media print {
+    .navbar, .hero-cta, .back-to-top, .footer, .print-btn {
+        display: none !important;
+    }
+    body {
+        background: #fff !important;
+        color: #000 !important;
+    }
+}
