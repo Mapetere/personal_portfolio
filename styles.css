@@ -154,7 +154,9 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 60px;
-    align-items: center
+    align-items: center;
+    animation: pageReveal 0.8s ease-out 0.3s forwards;
+    opacity: 0;
 }
 
 .hero-greeting {
@@ -201,6 +203,23 @@ a {
     51%,
     100% {
         opacity: 0
+    }
+}
+
+/* Page Reveal Animation */
+body {
+    animation: pageReveal 0.8s ease-out forwards;
+}
+
+@keyframes pageReveal {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -330,7 +349,7 @@ a {
 }
 
 section {
-    padding: 100px 0
+    padding: 140px 0
 }
 
 .section-title {
@@ -674,7 +693,7 @@ section {
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 24px
+    gap: 40px
 }
 
 .project-card {
@@ -741,9 +760,9 @@ section {
 
 .stories-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-    margin-top: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 40px;
+    margin-top: 50px;
 }
 
 .story-card {
