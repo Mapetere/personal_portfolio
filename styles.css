@@ -593,10 +593,12 @@ section {
 
 .project-label {
     font-size: .85rem;
-    color: var(--purple);
+    color: var(--primary);
     font-weight: 600;
     margin-bottom: 12px;
-    font-family: var(--mono)
+    font-family: var(--mono);
+    text-transform: uppercase;
+    letter-spacing: 1px
 }
 
 .project-title {
@@ -637,11 +639,12 @@ section {
 
 .tech-tag {
     padding: 6px 14px;
-    background: rgba(153, 69, 255, 0.1);
-    color: var(--purple);
+    background: rgba(6, 78, 59, 0.05);
+    color: var(--primary);
     border-radius: 9999px;
     font-size: .85rem;
-    font-family: var(--mono)
+    font-family: var(--mono);
+    border: 1px solid var(--border)
 }
 
 .challenge-text,
@@ -652,11 +655,11 @@ section {
 }
 
 .challenge-text strong {
-    color: var(--pink);
+    color: #991b1b;
 }
 
 .solution-text strong {
-    color: #22c55e;
+    color: #166534;
 }
 
 .hanaka-preview {
@@ -782,19 +785,20 @@ section {
 }
 
 .project-card {
-    background: var(--bg2);
+    background: #fff;
     border-radius: 24px;
     padding: 32px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border);
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: relative;
     overflow: hidden;
+    box-shadow: var(--shadow);
 }
 
 .project-card:hover {
     transform: translateY(-10px);
-    border-color: rgba(153, 69, 255, 0.3);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border-color: var(--primary);
+    box-shadow: 0 20px 40px rgba(6, 78, 59, 0.08);
 }
 
 .card-header {
@@ -804,7 +808,7 @@ section {
 }
 
 .folder-icon {
-    color: var(--purple)
+    color: var(--primary)
 }
 
 .card-links a {
@@ -835,17 +839,17 @@ section {
 
 .card-tech span {
     padding: 6px 14px;
-    background: rgba(153, 69, 255, 0.1);
+    background: rgba(6, 78, 59, 0.05);
     border-radius: 100px;
     font-size: 0.8rem;
-    color: var(--purple);
+    color: var(--primary);
     font-family: var(--mono);
-    border: 1px solid rgba(153, 69, 255, 0.2);
+    border: 1px solid var(--border);
     transition: all 0.3s ease;
 }
 
 .card-tech span:hover {
-    background: var(--purple);
+    background: var(--primary);
     color: white;
     transform: scale(1.05);
 }
@@ -863,27 +867,29 @@ section {
 }
 
 .story-card {
-    background: rgba(153, 69, 255, 0.03);
-    border: 1px solid rgba(153, 69, 255, 0.1);
-    border-radius: 20px;
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 24px;
     padding: 32px;
     transition: all 0.3s ease;
+    box-shadow: var(--shadow)
 }
 
 .story-card:hover {
-    background: rgba(153, 69, 255, 0.05);
-    border-color: var(--purple);
+    background: var(--bg2);
+    border-color: var(--primary);
     transform: translateY(-5px);
 }
 
 .story-label {
     font-family: var(--mono);
-    color: var(--purple);
+    color: var(--primary);
     font-size: 0.8rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     margin-bottom: 12px;
     display: block;
+    font-weight: 600
 }
 
 .story-title {
@@ -903,8 +909,8 @@ section {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    color: var(--purple);
-    font-weight: 600;
+    color: var(--primary);
+    font-weight: 700;
     font-size: 0.9rem;
     transition: all 0.3s ease;
 }
