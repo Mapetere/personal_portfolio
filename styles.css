@@ -335,23 +335,26 @@ body {
 }
 
 .code-text .keyword {
-    color: #ff79c6
+    color: #0d9488;
+    font-weight: 600
 }
 
 .code-text .function {
-    color: #50fa7b
+    color: #064e3b;
+    font-weight: 600
 }
 
 .code-text .string {
-    color: #f1fa8c
+    color: #b45309
 }
 
 .code-text .variable {
-    color: #8be9fd
+    color: var(--text)
 }
 
 .code-text .comment {
-    color: #6272a4
+    color: var(--text3);
+    font-style: italic
 }
 
 section {
@@ -366,7 +369,7 @@ section {
 .section-number {
     font-family: var(--mono);
     font-size: 1rem;
-    color: var(--purple);
+    color: var(--primary);
     font-weight: 500;
     margin-right: 12px
 }
@@ -386,7 +389,8 @@ section {
 }
 
 .about-text strong {
-    color: var(--purple)
+    color: var(--primary);
+    font-weight: 600
 }
 
 .about-stats {
@@ -394,14 +398,14 @@ section {
     gap: 40px;
     margin-top: 40px;
     padding-top: 40px;
-    border-top: 1px solid rgba(153, 69, 255, 0.2)
+    border-top: 1px solid var(--border)
 }
 
 .stat-number {
     display: block;
     font-size: 2.5rem;
     font-weight: 800;
-    color: var(--purple)
+    color: var(--primary)
 }
 
 .stat-label {
@@ -429,8 +433,8 @@ section {
     aspect-ratio: 1;
     border-radius: 20px;
     overflow: hidden;
-    border: 3px solid rgba(153, 69, 255, 0.4);
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
 }
 
 .profile-img {
@@ -457,7 +461,7 @@ section {
 .initials {
     font-size: 4rem;
     font-weight: 800;
-    color: var(--purple)
+    color: var(--primary)
 }
 
 .featured-project {
@@ -465,12 +469,12 @@ section {
     grid-template-columns: 1fr 1fr;
     gap: 60px;
     align-items: center;
-    background: rgba(26, 26, 53, 0.6);
-    border-radius: 20px;
+    background: #fff;
+    border-radius: 24px;
     padding: 40px;
-    border: 1px solid rgba(153, 69, 255, 0.15);
-    margin-bottom: 60px;
-    backdrop-filter: blur(10px)
+    border: 1px solid var(--border);
+    margin-bottom: 80px;
+    box-shadow: var(--shadow)
 }
 
 .featured-project.reverse .project-image {
