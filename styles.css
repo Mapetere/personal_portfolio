@@ -406,7 +406,12 @@ section {
 }
 
 .image-frame {
-    position: relative
+    width: 280px;
+    height: 280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 

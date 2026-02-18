@@ -81,8 +81,8 @@ const observer = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('section').forEach(section => {
     section.style.opacity = '0';
-    section.style.transform = 'translateY(40px)';
-    section.style.transition = 'opacity 0.8s ease .2s, transform 0.8s ease .2s';
+    section.style.transform = 'translateY(100px)';
+    section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
     observer.observe(section);
 });
 
