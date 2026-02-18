@@ -89,3 +89,13 @@ document.querySelectorAll('section').forEach(section => {
 // Fix hero visibility
 document.querySelector('.hero').style.opacity = '1';
 document.querySelector('.hero').style.transform = 'none';
+
+// Back to Top functionality
+const backToTop = document.getElementById('backToTop');
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 500) {
+        backToTop.classList.add('visible');
+    } else {
+        backToTop.classList.remove('visible');
+    }
+});
