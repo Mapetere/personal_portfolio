@@ -162,10 +162,12 @@ a {
 }
 
 .hero-greeting {
-    font-size: 1.2rem;
-    color: var(--purple);
-    font-weight: 500;
-    margin-bottom: 16px
+    font-size: 1.25rem;
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .hero-title {
@@ -176,7 +178,7 @@ a {
 }
 
 .gradient-text {
-    background: linear-gradient(135deg, #9945ff, #ff0080);
+    background: linear-gradient(135deg, #064e3b, #0d9488);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text
@@ -192,7 +194,7 @@ a {
 .typewriter::after {
     content: '|';
     animation: blink 1s infinite;
-    color: var(--purple)
+    color: var(--primary)
 }
 
 @keyframes blink {
@@ -252,32 +254,34 @@ body {
 }
 
 .btn-primary {
-    background: transparent;
-    color: var(--text);
-    border: 2px solid var(--purple)
+    background: var(--primary);
+    color: #fff;
+    border: 2px solid var(--primary)
 }
 
 .btn-primary:hover {
-    background: var(--purple);
-    box-shadow: var(--glow)
+    background: var(--primary-light);
+    border-color: var(--primary-light);
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(6, 78, 59, 0.15)
 }
 
 .btn-secondary {
     background: transparent;
-    color: var(--text);
-    border: 2px solid rgba(255, 255, 255, 0.2)
+    color: var(--primary);
+    border: 2px solid var(--primary)
 }
 
 .btn-secondary:hover {
-    border-color: var(--purple);
-    color: var(--purple)
+    background: rgba(6, 78, 59, 0.05);
+    transform: translateY(-2px)
 }
 
 .code-window {
-    background: var(--bg2);
-    border-radius: 16px;
-    border: 1px solid rgba(153, 69, 255, 0.2);
-    box-shadow: var(--glow);
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
     overflow: hidden;
     width: 100%;
     max-width: 500px
@@ -288,8 +292,8 @@ body {
     align-items: center;
     gap: 8px;
     padding: 16px 20px;
-    background: var(--bg3);
-    border-bottom: 1px solid rgba(153, 69, 255, 0.1)
+    background: var(--bg2);
+    border-bottom: 1px solid var(--border)
 }
 
 .dot {
