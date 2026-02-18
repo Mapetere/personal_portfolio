@@ -144,6 +144,24 @@
         .print-btn:hover {
             transform: translateY(-2px);
         }
+
+        @media print {
+
+            .print-btn,
+            .navbar,
+            .bg-grid,
+            .bg-gradient {
+                display: none !important;
+            }
+
+            body.cv-page {
+                padding: 0;
+            }
+
+            .cv-container {
+                max-width: 100%;
+            }
+        }
     </style>
 </head>
 
