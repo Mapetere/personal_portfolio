@@ -537,7 +537,8 @@ section {
 .wa-avatar {
     width: 40px;
     height: 40px;
-    background: var(--grad);
+    background: var(--primary);
+    color: #fff;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -939,16 +940,19 @@ section {
 }
 
 .skill-category {
-    background: rgba(26, 26, 53, 0.6);
-    border-radius: 20px;
+    background: #fff;
+    border-radius: 24px;
     padding: 32px;
-    border: 1px solid rgba(153, 69, 255, 0.1)
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow)
 }
 
 .skill-category h3 {
     font-size: 1.1rem;
     margin-bottom: 24px;
-    color: var(--purple)
+    color: var(--primary);
+    font-weight: 700;
+    letter-spacing: 0.5px
 }
 
 .skill-items {
@@ -961,20 +965,23 @@ section {
     align-items: center;
     gap: 12px;
     padding: 12px 16px;
-    background: rgba(153, 69, 255, 0.05);
+    background: rgba(6, 78, 59, 0.03);
     border-radius: 12px;
-    transition: all .2s
+    transition: all .3s ease;
+    border: 1px solid transparent
 }
 
 .skill-item:hover {
-    background: rgba(153, 69, 255, 0.15);
-    transform: translateX(8px)
+    background: #fff;
+    border-color: var(--primary);
+    transform: translateX(8px);
+    box-shadow: 0 4px 12px rgba(6, 78, 59, 0.05)
 }
 
 .skill-icon {
     font-size: .85rem;
-    font-weight: 600;
-    color: var(--purple);
+    font-weight: 700;
+    color: var(--primary);
     font-family: var(--mono);
     min-width: 28px
 }
@@ -996,13 +1003,14 @@ section {
 }
 
 .contact-note {
-    color: var(--purple);
+    color: var(--primary);
     font-size: 1rem;
     margin-bottom: 40px;
     padding: 16px 24px;
-    background: rgba(153, 69, 255, 0.1);
+    background: rgba(6, 78, 59, 0.03);
     border-radius: 12px;
-    border: 1px solid rgba(153, 69, 255, 0.2)
+    border: 1px solid var(--border);
+    font-weight: 500
 }
 
 .social-links {
@@ -1019,23 +1027,23 @@ section {
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background: rgba(153, 69, 255, 0.1);
-    border: 1px solid rgba(153, 69, 255, 0.2);
-    color: var(--text2);
+    background: #fff;
+    border: 1px solid var(--border);
+    color: var(--text3);
     transition: all .3s
 }
 
 .social-link:hover {
-    color: var(--purple);
-    border-color: var(--purple);
-    box-shadow: var(--glow);
+    color: var(--primary);
+    border-color: var(--primary);
+    box-shadow: 0 4px 12px rgba(6, 78, 59, 0.1);
     transform: translateY(-4px)
 }
 
 .footer {
     padding: 40px 24px;
     text-align: center;
-    border-top: 1px solid rgba(153, 69, 255, 0.1)
+    border-top: 1px solid var(--border)
 }
 
 .footer p {
@@ -1044,7 +1052,7 @@ section {
 }
 
 .footer strong {
-    color: var(--purple)
+    color: var(--primary)
 }
 
 @media(max-width:1024px) {
