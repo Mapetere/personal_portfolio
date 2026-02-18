@@ -515,7 +515,9 @@ section {
     padding: 40px;
     border: 1px solid var(--border);
     margin-bottom: 80px;
-    box-shadow: var(--shadow)
+    box-shadow: var(--shadow);
+    position: relative;
+    z-index: 1;
 }
 
 .featured-project.reverse .project-image {
@@ -596,7 +598,9 @@ section {
 
 .wa-status {
     font-size: .75rem;
-    color: #00a884
+    color: #4ade80;
+    /* Brighter green */
+    font-weight: 500
 }
 
 .wa-messages {
@@ -745,6 +749,12 @@ section {
     letter-spacing: 1px;
 }
 
+.mockup-nav div,
+.mockup-grid div {
+    pointer-events: none;
+    /* Ensure mockup internal elements don't steal clicks */
+}
+
 .mockup-search {
     flex: 1;
     height: 10px;
@@ -807,7 +817,15 @@ section {
 
 .project-links {
     display: flex;
-    gap: 20px
+    gap: 20px;
+    position: relative;
+    z-index: 20;
+}
+
+.project-link,
+.story-link {
+    cursor: pointer !important;
+    pointer-events: auto !important;
 }
 
 .project-link {
