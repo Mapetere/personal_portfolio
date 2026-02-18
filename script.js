@@ -77,12 +77,12 @@ const observer = new IntersectionObserver((entries) => {
             entry.target.style.transform = 'translateY(0)';
         }
     });
-}, { threshold: 0.2 });
+}, { threshold: 0.1 });
 
 document.querySelectorAll('section').forEach(section => {
     section.style.opacity = '0';
     section.style.transform = 'translateY(100px)';
-    section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+    section.style.transition = 'opacity 1.2s ease, transform 1.2s ease';
     observer.observe(section);
 });
 
