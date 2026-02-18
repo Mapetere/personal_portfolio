@@ -897,6 +897,16 @@ section {
     color: var(--purple);
     font-weight: 600;
     font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.story-link:hover {
+    gap: 12px;
+    opacity: 0.8;
+}
+
+.project-card .story-link {
+    margin-top: 24px;
 }
 
 @media(max-width: 768px) {
