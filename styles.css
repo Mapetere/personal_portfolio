@@ -432,6 +432,24 @@ section {
     backdrop-filter: blur(10px)
 }
 
+.featured-project.reverse .project-image {
+    order: 1
+}
+
+.featured-project.reverse .project-content {
+    order: -1;
+    text-align: right;
+}
+
+.featured-project.reverse .project-features {
+    justify-content: flex-end;
+}
+
+.featured-project.reverse .project-tech,
+.featured-project.reverse .project-links {
+    justify-content: flex-end;
+}
+
 .latterpay-preview {
     display: flex;
     justify-content: center;
@@ -581,6 +599,61 @@ section {
     font-family: var(--mono)
 }
 
+.challenge-text,
+.solution-text {
+    font-size: 0.9rem;
+    margin-top: 12px;
+    line-height: 1.6;
+}
+
+.challenge-text strong {
+    color: var(--pink);
+}
+
+.solution-text strong {
+    color: #22c55e;
+}
+
+.hanaka-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #1e1e3f, #2d2d5f);
+    border-radius: 12px;
+    min-height: 300px;
+}
+
+.ecommerce-mockup {
+    width: 100%;
+    max-width: 320px;
+    background: var(--bg2);
+    border-radius: 12px;
+    padding: 16px;
+    border: 1px solid rgba(153, 69, 255, 0.2);
+}
+
+.mockup-header {
+    height: 12px;
+    width: 60%;
+    background: var(--purple);
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.mockup-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+}
+
+.mockup-item {
+    aspect-ratio: 1;
+    background: var(--bg3);
+    border-radius: 4px;
+}
+
+
 .project-links {
     display: flex;
     gap: 20px
@@ -660,6 +733,71 @@ section {
     color: var(--text3);
     font-family: var(--mono)
 }
+
+/* Engineering Stories */
+.engineering-stories {
+    margin-top: 80px;
+}
+
+.stories-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.story-card {
+    background: rgba(153, 69, 255, 0.03);
+    border: 1px solid rgba(153, 69, 255, 0.1);
+    border-radius: 20px;
+    padding: 32px;
+    transition: all 0.3s ease;
+}
+
+.story-card:hover {
+    background: rgba(153, 69, 255, 0.05);
+    border-color: var(--purple);
+    transform: translateY(-5px);
+}
+
+.story-label {
+    font-family: var(--mono);
+    color: var(--purple);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    display: block;
+}
+
+.story-title {
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    color: var(--text);
+}
+
+.story-excerpt {
+    color: var(--text2);
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+    line-height: 1.7;
+}
+
+.story-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--purple);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+@media(max-width: 768px) {
+    .stories-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 .skills-grid {
     display: grid;
@@ -799,6 +937,78 @@ section {
     .about-content {
         grid-template-columns: 1fr
     }
+
+    .featured-project.reverse .project-image {
+        order: -1
+    }
+}
+
+/* Local Link Preview */
+.locallink-preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    background: #f8fafc;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.identity-card {
+    width: 280px;
+    background: #064E3B;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 20px 40px rgba(6, 78, 59, 0.3);
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.identity-logo {
+    width: 60px;
+    height: 60px;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.identity-name {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.identity-tagline {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.color-dots {
+    display: flex;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.color-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.preview-background {
+    position: absolute;
+    inset: 0;
+    opacity: 0.1;
+    background-image: radial-gradient(#064E3B 2px, transparent 2px);
+    background-size: 20px 20px;
 }
 
 @media(max-width:768px) {

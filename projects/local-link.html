@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Local Link - A visual identity and platform design for human relationships and community continuity">
+    <title>Local Link | Nyasha Mapetere</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .project-hero {
+            padding: 160px 24px 80px;
+            text-align: center
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--accent);
+            margin-bottom: 40px;
+            font-weight: 500
+        }
+
+        .back-link:hover {
+            opacity: .8
+        }
+
+        .project-hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 20px
+        }
+
+        .project-hero p {
+            color: var(--text2);
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 40px
+        }
+
+        .project-badges {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            flex-wrap: wrap
+        }
+
+        .badge {
+            padding: 8px 16px;
+            background: rgba(99, 102, 241, .1);
+            border-radius: 9999px;
+            font-size: .85rem;
+            color: var(--accent);
+            font-family: var(--mono)
+        }
+
+        .project-section {
+            padding: 60px 24px
+        }
+
+        .project-section h2 {
+            font-size: 1.75rem;
+            margin-bottom: 24px;
+            color: var(--accent)
+        }
+
+        .color-palette {
+            display: flex;
+            gap: 20px;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+
+        .color-swatch {
+            width: 150px;
+            height: 150px;
+            border-radius: 12px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 15px;
+            color: white;
+            font-family: var(--mono);
+            font-size: 0.8rem;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .veridian {
+            background: #064E3B;
+        }
+
+        .pure-white {
+            background: #FFFFFF;
+            color: #064E3B;
+        }
+
+        .brand-story {
+            background: rgba(255, 255, 255, 0.03);
+            border-radius: 16px;
+            padding: 40px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-gradient"></div>
+    <div class="bg-grid"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo"><span class="logo-bracket">&lt;</span>NM<span
+                    class="logo-bracket">/&gt;</span></a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../index.html#projects" class="nav-link active">Projects</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="project-hero">
+        <a href="../index.html#projects" class="back-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+            Back to Projects
+        </a>
+        <h1><span class="gradient-text">Local Link</span></h1>
+        <p>A professional and strong visual identity designed to convey human relationships, continuity, and
+            responsibility.</p>
+        <div class="project-badges">
+            <span class="badge">Visual Identity</span>
+            <span class="badge">UI/UX Design</span>
+            <span class="badge">Brand Strategy</span>
+            <span class="badge">Deep Veridian</span>
+        </div>
+    </section>
+
+    <div class="container">
+        <section class="project-section">
+            <h2>The Concept</h2>
+            <p style="color:var(--text2);font-size:1.05rem;line-height:1.8">
+                Local Link was designed to feel inevitable, not invented. Moving away from generic tech aesthetics,
+                the project focused on a calm, balanced balance that suggests bridging and threading without literal
+                imagery.
+            </p>
+
+            <div class="brand-story">
+                <h3 style="color:var(--accent);margin-bottom:15px">The Palette: Deep Veridian & Pure White</h3>
+                <p style="color:var(--text2)">Deep Veridian (#064E3B) represents local growth, stability, and deep
+                    community roots. Pure white symbolizes openness, clarity, and the space for relationships to
+                    flourish.</p>
+
+                <div class="color-palette">
+                    <div class="color-swatch veridian">
+                        <span>#064E3B</span>
+                        <span>Deep Veridian</span>
+                    </div>
+                    <div class="color-swatch pure-white">
+                        <span>#FFFFFF</span>
+                        <span>Pure White</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>Design Principles</h2>
+            <div
+                style="display:grid;grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));gap:30px;margin-top:40px">
+                <div>
+                    <h3 style="color:var(--accent);margin-bottom:12px">Quiet Strength</h3>
+                    <p style="color:var(--text2)">The brand avoids loud, aggressive marketing visual cues in favor of a
+                        calm, professional presence that builds trust.</p>
+                </div>
+                <div>
+                    <h3 style="color:var(--accent);margin-bottom:12px">Human Continuity</h3>
+                    <p style="color:var(--text2)">Visual elements suggest linking and threading, mirroring the way human
+                        relationships form the backbone of a community.</p>
+                </div>
+                <div>
+                    <h3 style="color:var(--accent);margin-bottom:12px">Legibility & Scale</h3>
+                    <p style="color:var(--text2)">Designed to maintain its integrity from small mobile avatars to
+                        large-scale environmental signage.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section" style="text-align:center;padding-bottom:100px">
+            <a href="https://github.com/Mapetere/Local-Link" class="btn btn-primary btn-large" target="_blank">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                </svg>
+                View on GitHub
+            </a>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Designed & Built by <strong>Nyasha Mapetere</strong></p>
+            <p class="footer-year">© 2026</p>
+        </div>
+    </footer>
+</body>
+
+</html>

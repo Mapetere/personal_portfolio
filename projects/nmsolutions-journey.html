@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="The Journey to the Inbox - How I solved email deliverability issues for NMSolutions">
+    <title>The Inbox Journey | Nyasha Mapetere</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .story-hero {
+            padding: 160px 24px 80px;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(153, 69, 255, 0.05) 0%, transparent 100%);
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--purple);
+            margin-bottom: 40px;
+            font-weight: 500;
+        }
+
+        .story-hero h1 {
+            font-size: clamp(2.5rem, 5vw, 4rem);
+            margin-bottom: 20px;
+        }
+
+        .story-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+
+        .story-content h2 {
+            font-size: 1.75rem;
+            margin: 40px 0 20px;
+            color: var(--purple);
+        }
+
+        .story-content p {
+            color: var(--text2);
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+
+        .tech-box {
+            background: rgba(153, 69, 255, 0.05);
+            border: 1px solid rgba(153, 69, 255, 0.1);
+            border-radius: 16px;
+            padding: 32px;
+            margin: 40px 0;
+        }
+
+        .tech-box h3 {
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .tag-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            list-style: none;
+        }
+
+        .tag {
+            padding: 6px 14px;
+            background: var(--bg3);
+            border-radius: 8px;
+            font-family: var(--mono);
+            font-size: 0.85rem;
+            color: var(--purple);
+        }
+
+        .timeline {
+            border-left: 2px solid rgba(153, 69, 255, 0.2);
+            margin: 40px 0;
+            padding-left: 30px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -41px;
+            top: 5px;
+            width: 20px;
+            height: 20px;
+            background: var(--bg);
+            border: 2px solid var(--purple);
+            border-radius: 50%;
+        }
+
+        .timeline-title {
+            font-weight: 700;
+            margin-bottom: 10px;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-gradient"></div>
+    <div class="bg-grid"></div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo"><span class="logo-bracket">&lt;</span>NM<span
+                    class="logo-bracket">/&gt;</span></a>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">Home</a></li>
+                <li><a href="../index.html#projects" class="nav-link">Projects</a></li>
+                <li><a href="../index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="story-hero">
+        <div class="container">
+            <a href="../index.html#projects" class="back-link">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M19 12H5M12 19l-7-7 7-7" />
+                </svg>
+                Back to Portfolio
+            </a>
+            <h1>The <span class="gradient-text">Inbox Journey</span></h1>
+            <p style="color:var(--text2); font-size: 1.2rem; max-width: 600px; margin: 0 auto;">
+                A technical deep-dive into how I revolutionized email deliverability for NMSolutions, moving vital
+                communications from spam to the primary inbox.
+            </p>
+        </div>
+    </section>
+
+    <div class="story-content">
+        <h2>The Problem</h2>
+        <p>
+            When NMSolutions first started sending automated project updates and client invoices, we noticed a critical
+            issue: over 70% of our emails were landing in the "Spam" or "Junk" folders. This led to delayed payments and
+            missed communications.
+        </p>
+
+        <div class="tech-box">
+            <h3>Technical Stack Used</h3>
+            <ul class="tag-list">
+                <li class="tag">SPF (Sender Policy Framework)</li>
+                <li class="tag">DKIM (DomainKeys Identified Mail)</li>
+                <li class="tag">DMARC</li>
+                <li class="tag">DNS Management</li>
+                <li class="tag">SMTP Relay</li>
+            </ul>
+        </div>
+
+        <h2>The Implementation</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <span class="timeline-title">1. Audit & Authentication</span>
+                <p>I started by auditing our DNS records. I implemented SPF records to authorize our sending servers and
+                    configured 2048-bit DKIM keys to cryptographically sign every outgoing email.</p>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-title">2. DMARC Enforcement</span>
+                <p>I set up a DMARC policy initially set to "none" to monitor traffic, later moving it to "quarantine"
+                    as we reached 100% alignment across all sending sources.</p>
+            </div>
+            <div class="timeline-item">
+                <span class="timeline-title">3. Reputation Management</span>
+                <p>I cleaned our mailing lists to reduce bounce rates and implemented a warm-up schedule for our new
+                    dedicated IP, gradually increasing volume to build trust with major ISPs like Google and Microsoft.
+                </p>
+            </div>
+        </div>
+
+        <h2>The Result</h2>
+        <p>
+            Within 30 days, our deliverability rate soared. Tests showed that our emails were now reaching the primary
+            inbox for 98% of recipients. This transition didn't just fix a technical bug; it restored trust in our
+            digital infrastructure.
+        </p>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Designed & Built by <strong>Nyasha Mapetere</strong></p>
+            <p class="footer-year">© 2026</p>
+        </div>
+    </footer>
+</body>
+
+</html>
