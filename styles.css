@@ -1,17 +1,18 @@
 :root {
-    --bg: #0d0d1a;
-    --bg2: #13132a;
-    --bg3: #1a1a35;
-    --text: #fff;
-    --text2: #b8b8d0;
-    --text3: #6b6b8a;
-    --purple: #9945ff;
-    --purple2: #7928ca;
-    --pink: #ff0080;
-    --grad: linear-gradient(135deg, #9945ff, #7928ca);
+    --bg: #fdfdfc;
+    --bg2: #f4f5f1;
+    --bg3: #ebedeb;
+    --text: #1a1c1a;
+    --text2: #4a4d4a;
+    --text3: #7b7e7b;
+    --primary: #064e3b;
+    --primary-light: #0d9488;
+    --accent: #f59e0b;
+    --grad: linear-gradient(135deg, #064e3b, #0d9488);
     --font: 'Inter', sans-serif;
     --mono: 'Fira Code', monospace;
-    --glow: 0 0 60px rgba(153, 69, 255, 0.4)
+    --shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    --border: rgba(6, 78, 59, 0.1)
 }
 
 *,
@@ -38,7 +39,7 @@ body {
 .bg-gradient {
     position: fixed;
     inset: 0;
-    background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(153, 69, 255, 0.15), transparent), radial-gradient(ellipse 50% 50% at 80% 50%, rgba(121, 40, 202, 0.1), transparent), radial-gradient(ellipse 40% 40% at 20% 80%, rgba(255, 0, 128, 0.05), transparent);
+    background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(6, 78, 59, 0.03), transparent), radial-gradient(ellipse 50% 50% at 80% 50%, rgba(13, 148, 136, 0.02), transparent);
     pointer-events: none;
     z-index: -2
 }
@@ -46,8 +47,8 @@ body {
 .bg-grid {
     position: fixed;
     inset: 0;
-    background-image: linear-gradient(rgba(153, 69, 255, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(153, 69, 255, 0.03) 1px, transparent 1px);
-    background-size: 50px 50px;
+    background-image: linear-gradient(rgba(6, 78, 59, 0.02) 1px, transparent 1px), linear-gradient(90deg, rgba(6, 78, 59, 0.02) 1px, transparent 1px);
+    background-size: 60px 60px;
     pointer-events: none;
     z-index: -1
 }
@@ -71,10 +72,10 @@ a {
     z-index: 1000;
     padding: 20px 0;
     transition: all 0.3s ease;
-    background: rgba(10, 10, 15, 0.7);
+    background: rgba(253, 253, 252, 0.8);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid var(--border);
 }
 
 .nav-container {
@@ -89,7 +90,7 @@ a {
 .nav-logo {
     font-size: 1.5rem;
     font-weight: 800;
-    color: var(--purple)
+    color: var(--primary)
 }
 
 .nav-menu {
@@ -136,7 +137,7 @@ a {
 .nav-toggle span {
     width: 25px;
     height: 2px;
-    background: var(--text);
+    background: var(--primary);
     transition: .3s
 }
 
