@@ -96,7 +96,7 @@
         }
 
         section {
-            margin-bottom: 10px;
+            margin-bottom: 6px;
         }
 
         h2 {
@@ -104,7 +104,7 @@
             text-transform: uppercase;
             letter-spacing: 0.08em;
             color: var(--cv-accent);
-            margin-bottom: 5px;
+            margin-bottom: 2px;
             background: #f9fafb;
             padding: 2px 8px;
             border-left: 3px solid var(--cv-accent);
@@ -113,23 +113,23 @@
 
         p,
         .cv-item-desc {
-            font-size: 10.5px;
-            line-height: 1.4;
+            font-size: 10.2px;
+            line-height: 1.35;
             color: var(--cv-text2);
             text-align: justify;
             margin: 0;
         }
 
         .experience-item {
-            margin-bottom: 8px;
+            margin-bottom: 6px;
         }
 
         .item-header {
             display: flex;
             justify-content: space-between;
             font-weight: 700;
-            font-size: 11px;
-            margin-bottom: 1px;
+            font-size: 10.5px;
+            margin-bottom: 0;
         }
 
         .item-title {
@@ -144,41 +144,41 @@
 
         .item-org {
             font-weight: 700;
-            font-size: 10.5px;
-            margin-bottom: 2px;
+            font-size: 10.2px;
+            margin-bottom: 1px;
         }
 
         ul {
-            margin: 2px 0 0 12px;
+            margin: 1px 0 0 12px;
             padding: 0;
         }
 
         li {
-            font-size: 10.5px;
+            font-size: 10px;
             color: var(--cv-text2);
-            line-height: 1.35;
-            margin-bottom: 1px;
+            line-height: 1.3;
+            margin-bottom: 0;
         }
 
         .bottom-grid {
             display: grid;
-            grid-template-columns: 1.5fr 1fr;
-            gap: 20px;
-            margin-top: 5px;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 2px;
         }
 
         .skills-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 4px;
-            margin-top: 4px;
+            gap: 3px;
+            margin-top: 2px;
         }
 
         .skill-tag {
             background: #f3f4f6;
-            padding: 1px 6px;
-            border-radius: 3px;
-            font-size: 9.5px;
+            padding: 0 5px;
+            border-radius: 2px;
+            font-size: 9px;
             color: var(--cv-text2);
             border: 1px solid #e5e7eb;
             font-weight: 600;
@@ -188,8 +188,8 @@
             margin-top: auto;
             text-align: center;
             border-top: 1px solid var(--cv-border);
-            padding-top: 8px;
-            font-size: 10px;
+            padding-top: 6px;
+            font-size: 9px;
             color: var(--cv-text2);
             font-style: italic;
         }
@@ -287,10 +287,12 @@
                     <span class="item-date">Sep 2024 – Aug 2025</span>
                 </div>
                 <ul>
-                    <li>Architected enterprise-grade systems in isolated Sandbox Environments for financial modules,
-                        ensuring zero risk deployments.</li>
-                    <li>Optimized backend performance and conducted rigorous integration testing across core
-                        infrastructure.</li>
+                    <li>Architected enterprise-grade systems in isolated Sandbox Environments, ensuring zero-risk
+                        deployments for financial modules.</li>
+                    <li>Optimized legacy backend performance and conducted rigorous integration testing across
+                        multi-node banking infrastructure.</li>
+                    <li>Developed automated QA pipelines to validate complex transactional algorithms before production
+                        rollout.</li>
                 </ul>
             </div>
 
@@ -300,10 +302,12 @@
                     <span class="item-date">2024 – Present</span>
                 </div>
                 <ul>
-                    <li>Aligned diverse stakeholder expectations with technical execution for Loans Management systems,
-                        ensuring decisions supported core business objectives.</li>
-                    <li>Drove rigorous algorithm QA and acted as a vital architectural bridge between technical and
-                        business teams.</li>
+                    <li>Aligned stakeholder expectations with technical execution for Loans Management systems, ensuring
+                        decisions supported core business objectives.</li>
+                    <li>Drove rigorous algorithm QA and acted as a vital architectural bridge between technical
+                        developers and non-technical stakeholders.</li>
+                    <li>Managed project lifecycle for financial systems, focusing on DNS resilience and
+                        high-availability server configurations.</li>
                 </ul>
             </div>
 
@@ -314,9 +318,9 @@
                 </div>
                 <ul>
                     <li>Increased enterprise email deliverability from 30% to 98% via advanced SPF/DKIM/DMARC
-                        implementation.</li>
+                        implementation for corporate clients.</li>
                     <li>Managed resilient DNS architecture and implemented Cloudflare Shield Edge Security for
-                        high-availability environments.</li>
+                        high-traffic, secure environments.</li>
                     <li>Architected and deployed <strong>LatterPay</strong> (WhatsApp bot) and <strong>Axion
                             Sync</strong> (Privacy-first Health App with local encryption).</li>
                 </ul>
@@ -327,10 +331,12 @@
                     <span class="item-title">Freelance Full Stack Developer</span>
                     <span class="item-date">2021 – Present</span>
                 </div>
-                <p style="margin-top: 2px;">
-                    Built and scaled custom inventory systems for retail hardware branches (Hanaka Hardware), featuring
-                    real-time stock synchronization and multi-node availability.
-                </p>
+                <ul>
+                    <li>Built and scaled custom multi-branch inventory systems (Hanaka Hardware) with real-time stock
+                        synchronization and local-first encryption.</li>
+                    <li>Consulted on technical SEO and payment gateway integrations (Paynow/Stripe) for various
+                        ecommerce startups.</li>
+                </ul>
             </div>
         </section>
 
@@ -341,8 +347,18 @@
                     <span class="item-title">Hanaka Hardware & Axion Sync</span>
                 </div>
                 <p>
-                    Developed a multi-branch inventory system with real-time stock synchronization and a privacy-focused
-                    health tracker utilizing local-first encryption standards for sensitive data protection.
+                    Developed a resilient multi-branch inventory system featuring real-time synchronization across
+                    nodes. Architected Axion Sync, a privacy-focused health tracker utilizing industry-standard
+                    local-first encryption for sensitive data protection.
+                </p>
+            </div>
+            <div class="experience-item" style="margin-top: 4px;">
+                <div class="item-header">
+                    <span class="item-title">LatterPay WhatsApp Integration</span>
+                </div>
+                <p>
+                    Engineered a secure WhatsApp-based payment bridge utilizing the Paynow API, enabling seamless mobile
+                    transactions for informal markets.
                 </p>
             </div>
         </section>
@@ -367,14 +383,20 @@
             </section>
 
             <section>
-                <h2>Education</h2>
-                <div class="item-header">
-                    <span class="item-title">BSc Hons. Computer Engineering</span>
-                    <span class="item-date">Graduating 2026</span>
+                <h2>Education & Leadership</h2>
+                <div class="experience-item" style="margin-bottom: 4px;">
+                    <div class="item-header">
+                        <span class="item-title">BSc Hons. Computer Engineering</span>
+                        <span class="item-date">Graduating 2026</span>
+                    </div>
+                    <div class="item-org">Chinhoyi University of Technology</div>
                 </div>
-                <div class="item-org">Chinhoyi University of Technology</div>
+                <p style="font-size: 10px;">
+                    <strong>Leadership:</strong> Stakeholder Management, Technical Bridging, QA Standards, Project
+                    Lifecycle Management.
+                </p>
                 <p
-                    style="margin-top: 4px; font-weight: 700; color: var(--cv-accent); font-size: 9px; text-transform: uppercase;">
+                    style="margin-top: 3px; font-weight: 700; color: var(--cv-accent); font-size: 9px; text-transform: uppercase;">
                     "Logic for Today. Legacy for Tomorrow."
                 </p>
             </section>
