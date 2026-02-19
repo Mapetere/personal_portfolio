@@ -72,18 +72,16 @@
             margin: 0 !important;
         }
 
-        /* Two-column layout */
+        /* Single-column layout */
         .cv-main-grid {
-            display: grid;
-            grid-template-columns: 1.5fr 1fr;
-            gap: 12px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
             margin-top: 0;
-            align-items: start;
-            align-content: start;
         }
 
         .cv-section {
-            margin-bottom: 4px;
+            margin-bottom: 6px;
             break-inside: avoid;
         }
 
@@ -242,8 +240,9 @@
             }
 
             .cv-main-grid {
-                gap: 10px;
-                display: grid !important;
+                gap: 8px;
+                display: flex !important;
+                flex-direction: column !important;
             }
 
             .cv-section {
@@ -256,15 +255,11 @@
 
             /* Force content to scale down to fit 1 page */
             html {
-                zoom: 0.92;
+                zoom: 0.90;
             }
         }
 
         @media (max-width: 768px) {
-            .cv-main-grid {
-                grid-template-columns: 1fr;
-            }
-
             .cv-contact {
                 text-align: left;
                 margin-top: 5px;
@@ -302,122 +297,111 @@
         </header>
 
         <div class="cv-main-grid">
-            <div class="cv-left-col">
-                <section class="cv-section">
-                    <h2>Professional Summary</h2>
+            <section class="cv-section">
+                <h2>Professional Summary</h2>
+                <p class="cv-item-desc">
+                    5th year Computer Engineering student with over 3 years of experience in architecting digital
+                    solutions and leading technical teams. Specialized in building robust ecommerce platforms, secure
+                    financial systems, and AI powered tools. Proven bridge between complex backend logic and user
+                    centric
+                    design.
+                </p>
+            </section>
+
+            <section class="cv-section">
+                <h2>Professional Experience</h2>
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <span class="cv-item-title">Full Stack Consultant</span>
+                        <span class="cv-item-date">Sep 2024 to Aug 2025</span>
+                    </div>
+                    <div class="cv-item-org">Afrosoft</div>
                     <p class="cv-item-desc">
-                        5th year Computer Engineering student with over 3 years of experience in architecting digital
-                        solutions
-                        and leading technical teams. Specialized in building robust ecommerce platforms, secure
-                        financial
-                        systems, and AI powered tools. Proven bridge between complex backend logic and user centric
-                        design.
+                        Architected enterprise-grade systems in isolated Sandbox Environments, ensuring zero risk
+                        deployments for financial modules. Optimized backend performance and conducted rigorous
+                        integration testing.
                     </p>
-                </section>
+                </div>
 
-                <section class="cv-section">
-                    <h2>Professional Experience</h2>
-                    <div class="cv-item">
-                        <div class="cv-item-header">
-                            <span class="cv-item-title">Full Stack Consultant</span>
-                            <span class="cv-item-date">Sep 2024 to Aug 2025</span>
-                        </div>
-                        <div class="cv-item-org">Afrosoft</div>
-                        <p class="cv-item-desc">
-                            Architected enterprise-grade systems in isolated Sandbox Environments, ensuring zero risk
-                            deployments for financial modules. Optimized backend performance and conducted rigorous
-                            integration testing.
-                        </p>
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <span class="cv-item-title">Technical Project Lead</span>
+                        <span class="cv-item-date">2024 to Present</span>
                     </div>
+                    <div class="cv-item-org">ZDF Finance and Loans Management</div>
+                    <p class="cv-item-desc">
+                        Aligned diverse stakeholder expectations with technical execution. Acted as a vital bridge
+                        between teams, ensuring decisions supported core business objectives. Drove rigorous
+                        algorithm QA.
+                    </p>
+                </div>
 
-                    <div class="cv-item">
-                        <div class="cv-item-header">
-                            <span class="cv-item-title">Technical Project Lead</span>
-                            <span class="cv-item-date">2024 to Present</span>
-                        </div>
-                        <div class="cv-item-org">ZDF Finance and Loans Management</div>
-                        <p class="cv-item-desc">
-                            Aligned diverse stakeholder expectations with technical execution. Acted as a vital bridge
-                            between teams, ensuring decisions supported core business objectives. Drove rigorous
-                            algorithm QA.
-                        </p>
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <span class="cv-item-title">Systems Engineer & Consultant</span>
+                        <span class="cv-item-date">2023 to Present</span>
                     </div>
+                    <div class="cv-item-org">NMSolutions</div>
+                    <p class="cv-item-desc">
+                        Revolutionized enterprise email deliverability via SPF/DKIM/DMARC, increasing reach from 30%
+                        to 98%. Managed resilient DNS and implemented Cloudflare Shield Edge Security.
+                    </p>
+                </div>
 
-                    <div class="cv-item">
-                        <div class="cv-item-header">
-                            <span class="cv-item-title">Systems Engineer & Consultant</span>
-                            <span class="cv-item-date">2023 to Present</span>
-                        </div>
-                        <div class="cv-item-org">NMSolutions</div>
-                        <p class="cv-item-desc">
-                            Revolutionized enterprise email deliverability via SPF/DKIM/DMARC, increasing reach from 30%
-                            to 98%. Managed resilient DNS and implemented Cloudflare Shield Edge Security.
-                        </p>
+                <div class="cv-item">
+                    <div class="cv-item-header">
+                        <span class="cv-item-title">Freelance Full Stack Developer</span>
+                        <span class="cv-item-date">2021 to Present</span>
                     </div>
+                    <p class="cv-item-desc">
+                        Architected and deployed LatterPay (WhatsApp bot), Hanaka (Inventory/Supabase), and Axion
+                        Sync (Privacy first Health App).
+                    </p>
+                </div>
+            </section>
 
-                    <div class="cv-item">
-                        <div class="cv-item-header">
-                            <span class="cv-item-title">Freelance Full Stack Developer</span>
-                            <span class="cv-item-date">2021 to Present</span>
-                        </div>
-                        <p class="cv-item-desc">
-                            Architected and deployed LatterPay (WhatsApp bot), Hanaka (Inventory/Supabase), and Axion
-                            Sync (Privacy first Health App).
-                        </p>
-                    </div>
-                </section>
+            <section class="cv-section">
+                <h2>Featured Projects</h2>
+                <div class="cv-item">
+                    <div class="cv-item-title">Hanaka Hardware & Axion Sync</div>
+                    <p class="cv-item-desc">Multi branch inventory system with real time stock sync and a
+                        privacy focused health tracker with local first encryption.</p>
+                </div>
+            </section>
 
-                <section class="cv-section">
-                    <h2>Featured Projects</h2>
-                    <div class="cv-item">
-                        <div class="cv-item-title">Hanaka Hardware & Axion Sync</div>
-                        <p class="cv-item-desc">Multi branch inventory system with real time stock sync and a
-                            privacy focused health tracker with local first encryption.</p>
+            <section class="cv-section">
+                <h2>Core Competencies</h2>
+                <div class="skill-group">
+                    <div class="tech-text-list">
+                        <span class="tech-text">Python</span>
+                        <span class="tech-text">Flask</span>
+                        <span class="tech-text">JavaScript</span>
+                        <span class="tech-text">React</span>
+                        <span class="tech-text">Tailwind CSS</span>
+                        <span class="tech-text">Supabase</span>
+                        <span class="tech-text">Docker</span>
+                        <span class="tech-text">Terraform</span>
+                        <span class="tech-text">Cloudflare</span>
                     </div>
-                </section>
-            </div>
+                </div>
+                <p class="cv-item-desc" style="font-size: 0.72rem; margin-top: 2px;">
+                    WhatsApp API, Payment Gateways (Paynow), Technical SEO, DNS Resilience.
+                </p>
+            </section>
 
-            <div class="cv-right-col">
-                <section class="cv-section">
-                    <h2>Core Competencies</h2>
-                    <div class="skill-group">
-                        <h3>Languages & Frameworks</h3>
-                        <div class="tech-text-list">
-                            <span class="tech-text">Python</span>
-                            <span class="tech-text">Flask</span>
-                            <span class="tech-text">JavaScript</span>
-                            <span class="tech-text">React</span>
-                            <span class="tech-text">Tailwind CSS</span>
-                        </div>
-                    </div>
-                    <div class="skill-group">
-                        <h3>Tools & Infrastructure</h3>
-                        <div class="tech-text-list">
-                            <span class="tech-text">Supabase</span>
-                            <span class="tech-text">Docker</span>
-                            <span class="tech-text">Terraform</span>
-                            <span class="tech-text">Cloudflare</span>
-                        </div>
-                    </div>
-                    <div class="skill-group">
-                        <h3>Specializations</h3>
-                        <p class="cv-item-desc" style="font-size: 0.8rem;">WhatsApp API, Payment Gateways (Paynow),
-                            Technical SEO, DNS Resilience.</p>
-                    </div>
-                </section>
-
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
                 <section class="cv-section">
                     <h2>Education</h2>
                     <div class="cv-item">
-                        <div class="cv-item-title" style="font-size: 0.9rem;">BSc Hons. Computer Engineering</div>
+                        <div class="cv-item-title" style="font-size: 0.82rem;">BSc Hons. Computer Engineering</div>
                         <div class="cv-item-date">Graduating 2026</div>
-                        <div class="cv-item-org" style="font-size: 0.85rem;">Chinhoyi University of Technology</div>
+                        <div class="cv-item-org" style="font-size: 0.75rem;">Chinhoyi University of Technology</div>
                     </div>
                 </section>
 
                 <section class="cv-section">
                     <h2>Leadership</h2>
-                    <p class="cv-item-desc" style="font-size: 0.8rem;">Stakeholder Management, Technical Bridging, QA
+                    <p class="cv-item-desc" style="font-size: 0.75rem;">Stakeholder Management, Technical Bridging, QA
                         Standards, Project Lifecycle.</p>
                 </section>
             </div>
