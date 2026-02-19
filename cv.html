@@ -8,135 +8,155 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Caveat:wght@400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Caveat:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <style>
         :root {
             --cv-bg: #ffffff;
-            --cv-text: #1f2937;
-            --cv-text2: #4b5563;
+            --cv-text: #111827;
+            --cv-text2: #374151;
             --cv-accent: #0d9488;
-            --cv-border: #e5e7eb;
+            --cv-border: #f3f4f6;
         }
 
         body.cv-page {
-            background: var(--cv-bg);
+            background: #f9fafb;
             color: var(--cv-text);
-            line-height: 1.5;
+            line-height: 1.4;
             padding: 20px;
+            font-size: 0.9rem;
         }
 
         .cv-container {
-            max-width: 850px;
+            max-width: 900px;
             margin: 0 auto;
             background: #fff;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border-radius: 4px;
         }
 
         .cv-header {
             display: flex;
             justify-content: space-between;
-            align-items: flex-end;
+            align-items: center;
             border-bottom: 2px solid var(--cv-accent);
-            padding-bottom: 15px;
-            margin-bottom: 25px;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
         }
 
         .cv-name h1 {
-            font-size: 2.5rem;
-            color: var(--cv-text);
-            margin-bottom: 5px;
+            font-size: 2rem;
+            margin: 0;
+            line-height: 1;
         }
 
         .cv-subtitle {
-            font-size: 1.2rem;
+            font-size: 1rem;
             color: var(--cv-accent);
-            font-weight: 500;
+            font-weight: 600;
+            margin-top: 4px;
         }
 
         .cv-contact {
             text-align: right;
-            font-size: 0.95rem;
+            font-size: 0.85rem;
             color: var(--cv-text2);
         }
 
+        .cv-contact a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* Two-column layout */
+        .cv-main-grid {
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            gap: 30px;
+        }
+
         .cv-section {
-            margin-bottom: 20px;
+            margin-bottom: 18px;
         }
 
         .cv-section h2 {
-            font-size: 1.1rem;
+            font-size: 0.95rem;
             text-transform: uppercase;
-            letter-spacing: 0.1em;
+            letter-spacing: 0.05em;
             color: var(--cv-accent);
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             border-bottom: 1px solid var(--cv-border);
-            padding-bottom: 4px;
+            padding-bottom: 3px;
         }
 
         .cv-item {
-            margin-bottom: 12px;
+            margin-bottom: 10px;
         }
 
         .cv-item-header {
             display: flex;
             justify-content: space-between;
-            margin-bottom: 5px;
+            margin-bottom: 2px;
         }
 
         .cv-item-title {
             font-weight: 700;
-            font-size: 1.1rem;
+            font-size: 1rem;
         }
 
         .cv-item-date {
             color: var(--cv-text2);
-            font-size: 0.9rem;
+            font-size: 0.8rem;
+            font-weight: 500;
         }
 
         .cv-item-org {
-            font-weight: 500;
+            font-weight: 600;
             color: var(--cv-accent);
-            margin-bottom: 8px;
+            font-size: 0.9rem;
+            margin-bottom: 4px;
         }
 
         .cv-item-desc {
             color: var(--cv-text2);
-            font-size: 0.95rem;
+            font-size: 0.88rem;
         }
 
-        .skills-list {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
+        .skill-group {
+            margin-bottom: 12px;
         }
 
         .skill-group h3 {
-            font-size: 0.95rem;
-            margin-bottom: 8px;
+            font-size: 0.85rem;
+            margin-bottom: 6px;
             color: var(--cv-text);
-        }
-
-        .cv-footer {
-            margin-top: 30px;
-            text-align: center;
-            border-top: 1px solid var(--cv-border);
-            padding-top: 15px;
+            font-weight: 700;
         }
 
         .tech-text-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 6px;
+            gap: 5px;
         }
 
         .tech-text {
-            background: rgba(13, 148, 136, 0.05);
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 0.85rem;
-            color: var(--cv-text);
-            border: 1px solid rgba(13, 148, 136, 0.1);
+            background: #f3f4f6;
+            padding: 1px 6px;
+            border-radius: 3px;
+            font-size: 0.78rem;
+            color: var(--cv-text2);
+            border: 1px solid #e5e7eb;
+        }
+
+        .cv-footer {
+            margin-top: 20px;
+            text-align: center;
+            border-top: 1px solid var(--cv-border);
+            padding-top: 12px;
+            font-size: 0.8rem;
+            color: var(--cv-text2);
         }
 
         .print-btn {
@@ -146,38 +166,36 @@
             background: var(--cv-accent);
             color: white;
             border: none;
-            padding: 12px 24px;
-            border-radius: 9999px;
+            padding: 10px 20px;
+            border-radius: 30px;
             cursor: pointer;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
             font-weight: 600;
             display: flex;
             align-items: center;
             gap: 8px;
-            transition: transform 0.2s;
-        }
-
-        .print-btn:hover {
-            transform: translateY(-2px);
+            font-size: 0.9rem;
         }
 
         .cv-back-link {
             display: inline-flex;
             align-items: center;
-            gap: 8px;
+            gap: 6px;
             color: var(--cv-accent);
             text-decoration: none;
             font-weight: 500;
-            margin-bottom: 20px;
-        }
-
-        .cv-back-link:hover {
-            opacity: 0.8;
+            margin-bottom: 15px;
+            font-size: 0.9rem;
         }
 
         @media print {
+            @page {
+                size: A4;
+                margin: 0.8cm;
+            }
 
             .print-btn,
+            .cv-back-link,
             .navbar,
             .bg-grid,
             .bg-gradient {
@@ -186,10 +204,34 @@
 
             body.cv-page {
                 padding: 0;
+                background: white;
+                font-size: 8.5pt;
             }
 
             .cv-container {
                 max-width: 100%;
+                box-shadow: none;
+                padding: 0;
+            }
+
+            .cv-contact p {
+                margin: 2px 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .cv-main-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cv-contact {
+                text-align: left;
+                margin-top: 10px;
+            }
+
+            .cv-header {
+                flex-direction: column;
+                align-items: flex-start;
             }
         }
     </style>
@@ -198,7 +240,7 @@
 <body class="cv-page">
     <div class="cv-container">
         <a href="index.html" class="cv-back-link">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M19 12H5M12 19l-7-7 7-7" />
             </svg>
             Back to Portfolio
@@ -209,155 +251,144 @@
                 <p class="cv-subtitle">Software Engineer & Systems Architect</p>
             </div>
             <div class="cv-contact">
-                <p>Harare, Zimbabwe</p>
-                <p>mapeterenyasha@gmail.com</p>
-                <p><a href="https://www.linkedin.com/in/nyashamapetere/" target="_blank"
-                        style="color: inherit; text-decoration: none;">linkedin.com/in/nyashamapetere</a></p>
-                <p>github.com/Mapetere</p>
+                <p>Harare, Zimbabwe | mapeterenyasha@gmail.com</p>
+                <p>
+                    <a href="https://www.linkedin.com/in/nyashamapetere/"
+                        target="_blank">linkedin.com/in/nyashamapetere</a> |
+                    <a href="https://github.com/Mapetere" target="_blank">github.com/Mapetere</a>
+                </p>
             </div>
         </header>
 
-        <section class="cv-section">
-            <h2>Professional Summary</h2>
-            <p class="cv-item-desc">
-                5th year Computer Engineering student with over 3 years of experience in architecting digital solutions
-                and leading technical teams. Specialized in building robust ecommerce platforms, secure financial
-                systems, and AI-powered tools. Proven track record in managing stakeholder expectations and bridging the
-                gap between complex backend logic and user-centric frontend design.
-            </p>
-        </section>
+        <div class="cv-main-grid">
+            <div class="cv-left-col">
+                <section class="cv-section">
+                    <h2>Professional Summary</h2>
+                    <p class="cv-item-desc">
+                        5th year Computer Engineering student with over 3 years of experience in architecting digital
+                        solutions
+                        and leading technical teams. Specialized in building robust ecommerce platforms, secure
+                        financial
+                        systems, and AI-powered tools. Proven bridge between complex backend logic and user-centric
+                        design.
+                    </p>
+                </section>
 
-        <section class="cv-section">
-            <h2>Core Competencies</h2>
-            <div class="skills-list">
-                <div class="skill-group">
-                    <h3>Languages & Frameworks</h3>
-                    <div class="tech-text-list">
-                        <span class="tech-text">Python</span>
-                        <span class="tech-text">Flask</span>
-                        <span class="tech-text">JavaScript</span>
-                        <span class="tech-text">React</span>
-                        <span class="tech-text">Tailwind CSS</span>
+                <section class="cv-section">
+                    <h2>Professional Experience</h2>
+                    <div class="cv-item">
+                        <div class="cv-item-header">
+                            <span class="cv-item-title">Full Stack Consultant</span>
+                            <span class="cv-item-date">Sep 2024 - Aug 2025</span>
+                        </div>
+                        <div class="cv-item-org">Afrosoft</div>
+                        <p class="cv-item-desc">
+                            Architected enterprise-grade systems in isolated Sandbox Environments, ensuring zero-risk
+                            deployments for financial modules. Optimized backend performance and conducted rigorous
+                            integration testing.
+                        </p>
                     </div>
-                </div>
-                <div class="skill-group">
-                    <h3>Tools & Infrastructure</h3>
-                    <div class="tech-text-list">
-                        <span class="tech-text">Supabase</span>
-                        <span class="tech-text">Docker</span>
-                        <span class="tech-text">Terraform</span>
-                        <span class="tech-text">Cloudflare</span>
+
+                    <div class="cv-item">
+                        <div class="cv-item-header">
+                            <span class="cv-item-title">Technical Project Lead</span>
+                            <span class="cv-item-date">2024 - Present</span>
+                        </div>
+                        <div class="cv-item-org">ZDF Finance and Loans Management</div>
+                        <p class="cv-item-desc">
+                            Aligned diverse stakeholder expectations with technical execution. Acted as a vital bridge
+                            between teams, ensuring decisions supported core business objectives. Drove rigorous
+                            algorithm QA.
+                        </p>
                     </div>
-                </div>
-                <div class="skill-group">
-                    <h3>Specializations</h3>
-                    <p class="cv-item-desc">WhatsApp API Integration, Payment Gateways (Paynow), Technical SEO, DNS
-                        Resilience.</p>
-                </div>
-                <div class="skill-group">
-                    <h3>Leadership</h3>
-                    <p class="cv-item-desc">Stakeholder Management, Technical Bridging, QA Standards, Project Lifecycle
-                        Management.</p>
-                </div>
-            </div>
-        </section>
 
-        <section class="cv-section">
-            <h2>Professional Experience</h2>
+                    <div class="cv-item">
+                        <div class="cv-item-header">
+                            <span class="cv-item-title">Systems Engineer & Consultant</span>
+                            <span class="cv-item-date">2023 - Present</span>
+                        </div>
+                        <div class="cv-item-org">NMSolutions</div>
+                        <p class="cv-item-desc">
+                            Revolutionized enterprise email deliverability via SPF/DKIM/DMARC, increasing reach from 30%
+                            to 98%. Managed resilient DNS and implemented Cloudflare Shield Edge Security.
+                        </p>
+                    </div>
 
-            <div class="cv-item">
-                <div class="cv-item-header">
-                    <span class="cv-item-title">Full Stack Consultant</span>
-                    <span class="cv-item-date">Sep 2024 - Aug 2025</span>
-                </div>
-                <div class="cv-item-org">Afrosoft</div>
-                <p class="cv-item-desc">
-                    Architected and tested enterprise-grade systems within isolated **Sandbox Environments**, ensuring
-                    high reliability and zero-risk deployments for complex financial modules. Optimized backend
-                    performance and conducted rigorous integration testing to maintain medical-grade precision in
-                    high-stakes software delivery.
-                </p>
-            </div>
+                    <div class="cv-item">
+                        <div class="cv-item-header">
+                            <span class="cv-item-title">Freelance Full Stack Developer</span>
+                            <span class="cv-item-date">2021 - Present</span>
+                        </div>
+                        <p class="cv-item-desc">
+                            Architected and deployed LatterPay (WhatsApp bot), Hanaka (Inventory/Supabase), and Axion
+                            Sync (Privacy-first Health App).
+                        </p>
+                    </div>
+                </section>
 
-            <div class="cv-item">
-                <div class="cv-item-header">
-                    <span class="cv-item-title">Technical Project Lead</span>
-                    <span class="cv-item-date">2024 - Present</span>
-                </div>
-                <div class="cv-item-org">ZDF Finance and Loans Management</div>
-                <p class="cv-item-desc">
-                    Aligned diverse stakeholder expectations with technical execution for a complex financial system.
-                    Acted as a vital bridge between backend and frontend teams, ensuring technical decisions supported
-                    core business objectives. Personally drove the QA process, including rigorous testing of loan
-                    calculation algorithms and data integrity.
-                </p>
+                <section class="cv-section">
+                    <h2>Featured Projects</h2>
+                    <div class="cv-item">
+                        <div class="cv-item-title">Hanaka Hardware & Axion Sync</div>
+                        <p class="cv-item-desc">Multi-branch inventory system with real-time stock sync and a
+                            privacy-focused health tracker with local-first encryption.</p>
+                    </div>
+                </section>
             </div>
 
-            <div class="cv-item">
-                <div class="cv-item-header">
-                    <span class="cv-item-title">Systems Engineer & Consultant</span>
-                    <span class="cv-item-date">2023 - Present</span>
-                </div>
-                <div class="cv-item-org">NMSolutions</div>
-                <p class="cv-item-desc">
-                    Revolutionized enterprise email deliverability by implementing SPF, DKIM, and DMARC protocols,
-                    increasing primary inbox reach from 30% to 98%. Managed resilient DNS infrastructure and implemented
-                    Edge Security measures using Cloudflare Shield to protect user data and enhance performance.
-                </p>
-            </div>
+            <div class="cv-right-col">
+                <section class="cv-section">
+                    <h2>Core Competencies</h2>
+                    <div class="skill-group">
+                        <h3>Languages & Frameworks</h3>
+                        <div class="tech-text-list">
+                            <span class="tech-text">Python</span>
+                            <span class="tech-text">Flask</span>
+                            <span class="tech-text">JavaScript</span>
+                            <span class="tech-text">React</span>
+                            <span class="tech-text">Tailwind CSS</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Tools & Infrastructure</h3>
+                        <div class="tech-text-list">
+                            <span class="tech-text">Supabase</span>
+                            <span class="tech-text">Docker</span>
+                            <span class="tech-text">Terraform</span>
+                            <span class="tech-text">Cloudflare</span>
+                        </div>
+                    </div>
+                    <div class="skill-group">
+                        <h3>Specializations</h3>
+                        <p class="cv-item-desc" style="font-size: 0.8rem;">WhatsApp API, Payment Gateways (Paynow),
+                            Technical SEO, DNS Resilience.</p>
+                    </div>
+                </section>
 
-            <div class="cv-item">
-                <div class="cv-item-header">
-                    <span class="cv-item-title">Freelance Full Stack Developer</span>
-                    <span class="cv-item-date">2021 - Present</span>
-                </div>
-                <p class="cv-item-desc">
-                    Architected and deployed diverse applications including LatterPay (WhatsApp donation bot via
-                    Paynow), Hanaka Hardware (Real-time inventory management using Supabase triggers), and Axion Sync
-                    (Privacy-first health app with local-first encryption).
-                </p>
-            </div>
-        </section>
+                <section class="cv-section">
+                    <h2>Education</h2>
+                    <div class="cv-item">
+                        <div class="cv-item-title" style="font-size: 0.9rem;">BSc Hons. Computer Engineering</div>
+                        <div class="cv-item-date">Graduating 2026</div>
+                        <div class="cv-item-org" style="font-size: 0.85rem;">Chinhoyi University of Technology</div>
+                    </div>
+                </section>
 
-        <section class="cv-section">
-            <h2>Featured Projects</h2>
-
-            <div class="cv-item">
-                <div class="cv-item-title">Hanaka Hardware Ecommerce</div>
-                <p class="cv-item-desc">Built a comprehensive multi-branch inventory management system with real-time
-                    stock synchronization using Supabase subscriptions and database triggers.</p>
+                <section class="cv-section">
+                    <h2>Leadership</h2>
+                    <p class="cv-item-desc" style="font-size: 0.8rem;">Stakeholder Management, Technical Bridging, QA
+                        Standards, Project Lifecycle.</p>
+                </section>
             </div>
+        </div>
 
-            <div class="cv-item">
-                <div class="cv-item-title">Axion Sync</div>
-                <p class="cv-item-desc">Developed a privacy-focused health tracker implementing local-first encryption
-                    and secure PIN access for sensitive data protection on shared devices.</p>
-            </div>
-
-            <div class="cv-item">
-                <div class="cv-item-title">Plant Triage AI</div>
-                <p class="cv-item-desc">Engineered an AI-powered plant diagnosis tool utilizing OpenAI/GPT-4, focusing
-                    on image pre-processing to ensure accuracy with low-quality user uploads.</p>
-            </div>
-        </section>
-
-        <section class="cv-section">
-            <h2>Education</h2>
-            <div class="cv-item">
-                <div class="cv-item-header">
-                    <span class="cv-item-title">BSc Hons. Computer Engineering (Current)</span>
-                    <span class="cv-item-date">Graduating 2026</span>
-                </div>
-                <div class="cv-item-org">Chinhoyi University of Technology, Zimbabwe</div>
-            </div>
-        </section>
         <footer class="cv-footer">
             <p>Logic for Today. Legacy for Tomorrow.</p>
         </footer>
     </div>
 
     <button class="print-btn" onclick="window.print()" title="Save CV as PDF">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" />
             <path d="M6 14h12v8H6z" />
         </svg>
