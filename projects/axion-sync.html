@@ -77,10 +77,16 @@
         }
 
         .feature-card {
-            background: rgba(26, 26, 37, .8);
+            background: #fff;
             border-radius: 16px;
             padding: 28px;
-            border: 1px solid rgba(255, 255, 255, .05)
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
         }
 
         .feature-card h3 {
@@ -98,10 +104,12 @@
         }
 
         .technical-box {
-            background: rgba(255, 255, 255, 0.03);
+            background: #fff;
             border-radius: 16px;
             padding: 40px;
             margin-top: 40px;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
         }
 
         .technical-box h3 {
@@ -166,11 +174,22 @@
 
     <div class="container">
         <section class="project-section">
-            <h2>The Mission</h2>
+            <h2>The Philosophy</h2>
             <p style="color:var(--text2);font-size:1.05rem;line-height:1.8">
-                Axion Sync was built to provide a secure and private alternative for personal health tracking. By
-                prioritizing local first data principles and encrypted cloud sync, I wanted to ensure that users can
-                manage their information with complete peace of mind and heartfelt security.
+                In an era where personal data is often treated as a commodity, Axion Sync stands as a testament to the
+                belief that <strong>privacy is a fundamental human right</strong>. I built this application to provide a
+                sacred, secure space for health tracking, ensuring that sensitive information remains exactly where it
+                belongs: in the hands of the user. It's not just a tracker; it's a sanctuary of digital peace.
+            </p>
+        </section>
+
+        <section class="project-section">
+            <h2>Security as a Caretakers's Duty</h2>
+            <p style="color:var(--text2);font-size:1.05rem;line-height:1.8">
+                The technical heartbeat of Axion Sync is its <strong>local-first architectural pattern</strong>. By
+                employing AES-256 encryption at the edge and ensuring data is synchronized only via secure, encrypted
+                tunnels, I've crafted a system that prioritizes user safety above all else. This isn't just about
+                defending against threats; it's about honoring the trust users place in the technology I build.
             </p>
         </section>
 

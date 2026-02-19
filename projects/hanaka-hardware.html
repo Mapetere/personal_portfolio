@@ -77,10 +77,16 @@
         }
 
         .feature-card {
-            background: rgba(26, 26, 37, .8);
+            background: #fff;
             border-radius: 16px;
             padding: 28px;
-            border: 1px solid rgba(255, 255, 255, .05)
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
         }
 
         .feature-card h3 {
@@ -98,11 +104,14 @@
         }
 
         .challenge-box {
-            background: rgba(255, 255, 255, 0.03);
+            background: #fff;
             border-radius: 16px;
             padding: 40px;
             margin-top: 40px;
             border-left: 4px solid var(--accent);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--accent);
+            box-shadow: var(--shadow);
         }
 
         .challenge-box h3 {
@@ -111,11 +120,14 @@
         }
 
         .solution-box {
-            background: rgba(34, 197, 94, 0.05);
+            background: #f0fdf4;
             border-radius: 16px;
             padding: 40px;
             margin-top: 20px;
             border-left: 4px solid #22c55e;
+            border: 1px solid #dcfce7;
+            border-left: 4px solid #22c55e;
+            box-shadow: var(--shadow);
         }
 
         .solution-box h3 {
@@ -163,12 +175,22 @@
 
     <div class="container">
         <section class="project-section">
-            <h2>Vision</h2>
+            <h2>The Vision</h2>
             <p style="color:var(--text2);font-size:1.05rem;line-height:1.8">
-                Hanaka Hardware was designed with a vision to centralize and modernize the hardware shopping
-                experience in Zimbabwe. I realized that many local hardware stores operate with separate
-                inventory systems, leading to frustrating stock discrepancies for customers. This project
-                provides a unified storefront with live stock updates across every branch location.
+                Hanaka Hardware is more than an ecommerce platform; it's a vision for the <strong>renaissance of local
+                    trade</strong>. I recognized that the heart of our community beats in its hardware stores, yet many
+                were held back by fragmented systems. I built Hanaka to unify these voices, providing a digital
+                foundation that allows local businesses to compete with absolute clarity and modern efficiency.
+            </p>
+        </section>
+
+        <section class="project-section">
+            <h2>A Source of Truth</h2>
+            <p style="color:var(--text2);font-size:1.05rem;line-height:1.8">
+                At its core, Hanaka leverages <strong>real-time synchronization</strong> to solve the age-old problem of
+                stock discrepancies. By architecting a system where every transaction ripples instantly across all
+                branch databases, I've created a single, breathing source of truth. This technical precision builds the
+                most valuable asset in any business: unwavering customer trust.
             </p>
         </section>
 

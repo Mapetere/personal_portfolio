@@ -13,6 +13,11 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
     <style>
+        :root {
+            --purple: #d946ef;
+            /* Bright pinkish-purple as per ZDF theme hint */
+        }
+
         .story-hero {
             padding: 160px 24px 80px;
             text-align: center;
@@ -53,11 +58,12 @@
         }
 
         .tech-box {
-            background: rgba(153, 69, 255, 0.05);
-            border: 1px solid rgba(153, 69, 255, 0.1);
+            background: #fff;
+            border: 1px solid var(--border);
             border-radius: 16px;
             padding: 32px;
             margin: 40px 0;
+            box-shadow: var(--shadow);
         }
 
         .tech-box h3 {
@@ -90,9 +96,10 @@
 
         .result-item {
             padding: 24px;
-            background: var(--bg2);
+            background: #fff;
             border-radius: 16px;
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
         }
 
         .result-value {

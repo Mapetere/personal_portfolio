@@ -12,6 +12,10 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
     <style>
+        :root {
+            --pink: #db2777;
+        }
+
         .story-hero {
             padding: 160px 24px 80px;
             text-align: center;
@@ -52,23 +56,24 @@
         }
 
         .code-snippet {
-            background: var(--bg2);
+            background: #f8fafc;
             border-radius: 12px;
             padding: 24px;
             font-family: var(--mono);
             font-size: 0.9rem;
-            color: #8be9fd;
-            border: 1px solid rgba(255, 0, 128, 0.1);
+            color: #1e293b;
+            border: 1px solid var(--border);
             margin: 30px 0;
             overflow-x: auto;
         }
 
         .step-card {
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid rgba(255, 255, 255, 0.05);
+            background: #fff;
+            border: 1px solid var(--border);
             border-radius: 16px;
             padding: 28px;
             margin-bottom: 24px;
+            box-shadow: var(--shadow);
         }
 
         .step-number {

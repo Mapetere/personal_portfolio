@@ -12,6 +12,10 @@
         rel="stylesheet">
     <link rel="stylesheet" href="../styles.css">
     <style>
+        :root {
+            --pink: #db2777;
+        }
+
         .story-hero {
             padding: 160px 24px 80px;
             text-align: center;
@@ -52,11 +56,12 @@
         }
 
         .tech-box {
-            background: rgba(255, 0, 128, 0.05);
-            border: 1px solid rgba(255, 0, 128, 0.1);
+            background: #fff;
+            border: 1px solid var(--border);
             border-radius: 16px;
             padding: 32px;
             margin: 40px 0;
+            box-shadow: var(--shadow);
         }
     </style>
 </head>

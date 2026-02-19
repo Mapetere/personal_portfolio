@@ -87,7 +87,8 @@
             color: white;
             font-family: var(--mono);
             font-size: 0.8rem;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
         }
 
         .veridian {
@@ -100,10 +101,12 @@
         }
 
         .brand-story {
-            background: rgba(255, 255, 255, 0.03);
+            background: #fff;
+            border: 1px solid var(--border);
             border-radius: 16px;
             padding: 40px;
             margin-top: 40px;
+            box-shadow: var(--shadow);
         }
     </style>
 </head>
@@ -165,6 +168,42 @@
                     <div class="color-swatch pure-white">
                         <span>#FFFFFF</span>
                         <span>Pure White</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="project-section">
+            <h2>Technical Deep Dive</h2>
+            <div class="technical-grid" style="display:grid; gap:40px; margin-top:40px;">
+                <div class="tech-item"
+                    style="background:#fff; border:1px solid var(--border); border-radius:16px; overflow:hidden; box-shadow:var(--shadow);">
+                    <img src="../images/locallink_auth.png" alt="LocalLink Authentication"
+                        style="width:100%; height:auto; border-bottom:1px solid var(--border);">
+                    <div style="padding:30px;">
+                        <h3 style="color:var(--accent); margin-bottom:15px;">Secure Passwordless Entry</h3>
+                        <p style="color:var(--text2); line-height:1.7;">
+                            I implemented a professional, passwordless authentication system to prioritize both security
+                            and user convenience. By utilizing secure login codes sent directly to the user's email, the
+                            platform eliminates the risks associated with static passwords while maintaining a
+                            medical-grade level of trust and simplicity.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="tech-item"
+                    style="background:#fff; border:1px solid var(--border); border-radius:16px; overflow:hidden; box-shadow:var(--shadow);">
+                    <img src="../images/locallink_verify.png" alt="LocalLink Verification"
+                        style="width:100%; height:auto; border-bottom:1px solid var(--border);">
+                    <div style="padding:30px;">
+                        <h3 style="color:var(--accent); margin-bottom:15px;">Real-Time Verification & Integrity</h3>
+                        <p style="color:var(--text2); line-height:1.7;">
+                            The system features real-time feedback mechanisms, including secure code verification and
+                            instant toast notifications. Currently operating in a <strong>Professional Sandbox
+                                Environment</strong>, this allows for rigorous testing of structured transfer flows and
+                            state-management without risk to actual financial assets, ensuring the core logic is
+                            bulletproof before scaling.
+                        </p>
                     </div>
                 </div>
             </div>
