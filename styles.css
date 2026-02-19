@@ -145,6 +145,56 @@ a {
     box-shadow: 0 4px 12px rgba(6, 78, 59, 0.15);
 }
 
+.tech-tag {
+    background: var(--bg2);
+    color: var(--text2);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tech-tag:hover {
+    background: var(--bg3);
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.tech-icon {
+    width: 16px;
+    height: 16px;
+    filter: grayscale(1) opacity(0.8);
+    transition: all 0.3s ease;
+}
+
+.tech-tag:hover .tech-icon {
+    filter: grayscale(0) opacity(1);
+}
+
+.badge {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+    padding: 8px 16px;
+    border-radius: 30px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.badge .tech-icon {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) invert(1);
+}
+
 .nav-toggle {
     display: none;
     flex-direction: column;
@@ -1240,11 +1290,18 @@ section {
         width: 240px
     }
 }
+
 /* CV Print Styles */
 @media print {
-    .navbar, .hero-cta, .back-to-top, .footer, .print-btn {
+
+    .navbar,
+    .hero-cta,
+    .back-to-top,
+    .footer,
+    .print-btn {
         display: none !important;
     }
+
     body {
         background: #fff !important;
         color: #000 !important;
