@@ -192,7 +192,6 @@ a {
 .badge .tech-icon {
     width: 18px;
     height: 18px;
-    filter: brightness(0) invert(1);
 }
 
 .nav-toggle {
