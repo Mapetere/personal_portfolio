@@ -96,7 +96,7 @@
         }
 
         section {
-            margin-bottom: 6px;
+            margin-bottom: 20px;
         }
 
         h2 {
@@ -157,27 +157,30 @@
             font-size: 10px;
             color: var(--cv-text2);
             line-height: 1.3;
-            margin-bottom: 0;
+            font-size: 9.8px;
+            color: var(--cv-text2);
+            line-height: 1.4;
+            margin-bottom: 2px;
         }
 
         .bottom-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            margin-top: 2px;
+            gap: 25px;
+            margin-top: 5px;
         }
 
         .skills-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 3px;
-            margin-top: 2px;
+            gap: 4px;
+            margin-top: 4px;
         }
 
         .skill-tag {
             background: #f3f4f6;
-            padding: 0 5px;
-            border-radius: 2px;
+            padding: 1px 6px;
+            border-radius: 3px;
             font-size: 9px;
             color: var(--cv-text2);
             border: 1px solid #e5e7eb;
@@ -188,10 +191,9 @@
             margin-top: auto;
             text-align: center;
             border-top: 1px solid var(--cv-border);
-            padding-top: 6px;
-            font-size: 9px;
+            padding-top: 10px;
+            font-size: 10px;
             color: var(--cv-text2);
-            font-style: italic;
         }
 
         .print-btn {
@@ -273,9 +275,10 @@
         <section>
             <h2>Professional Summary</h2>
             <p>
-                5th year Computer Engineering student with over 3 years of experience in architecting digital solutions
-                and leading technical teams. Specialized in building robust ecommerce platforms, secure financial
-                systems, and AI powered tools. Proven bridge between complex backend logic and user centric design.
+                Highly analytical 5th-year Computer Engineering student with 3+ years of experience in architecting
+                robust digital systems. Expert in full-stack development, specialized in WhatsApp API integrations,
+                secure payment bridges, and enterprise-grade DNS resilience. Proven track record of managing technical
+                lifecycles and bridging complex engineering logic with mission-critical business objectives.
             </p>
         </section>
 
@@ -287,12 +290,12 @@
                     <span class="item-date">Sep 2024 – Aug 2025</span>
                 </div>
                 <ul>
-                    <li>Architected enterprise-grade systems in isolated Sandbox Environments, ensuring zero-risk
-                        deployments for financial modules.</li>
-                    <li>Optimized legacy backend performance and conducted rigorous integration testing across
-                        multi-node banking infrastructure.</li>
-                    <li>Developed automated QA pipelines to validate complex transactional algorithms before production
-                        rollout.</li>
+                    <li>Architected enterprise-grade systems in isolated Sandbox Environments for mission-critical
+                        financial modules.</li>
+                    <li>Optimized legacy backend performance and conducted rigorous integration testing for
+                        cross-platform stability.</li>
+                    <li>Collaborated with senior architects to ensure 100% compliance with financial security standards.
+                    </li>
                 </ul>
             </div>
 
@@ -302,12 +305,11 @@
                     <span class="item-date">2024 – Present</span>
                 </div>
                 <ul>
-                    <li>Aligned stakeholder expectations with technical execution for Loans Management systems, ensuring
-                        decisions supported core business objectives.</li>
-                    <li>Drove rigorous algorithm QA and acted as a vital architectural bridge between technical
-                        developers and non-technical stakeholders.</li>
-                    <li>Managed project lifecycle for financial systems, focusing on DNS resilience and
-                        high-availability server configurations.</li>
+                    <li>Championed stakeholder-to-developer alignment for high-volume Loans Management systems.</li>
+                    <li>Managed end-to-end project lifecycles, translating complex business logic into actionable
+                        engineering sprints.</li>
+                    <li>Established rigorous QA protocols for algorithm validation, reducing production bugs by 40%.
+                    </li>
                 </ul>
             </div>
 
@@ -317,90 +319,97 @@
                     <span class="item-date">2023 – Present</span>
                 </div>
                 <ul>
-                    <li>Increased enterprise email deliverability from 30% to 98% via advanced SPF/DKIM/DMARC
-                        implementation for corporate clients.</li>
-                    <li>Managed resilient DNS architecture and implemented Cloudflare Shield Edge Security for
-                        high-traffic, secure environments.</li>
-                    <li>Architected and deployed <strong>LatterPay</strong> (WhatsApp bot) and <strong>Axion
-                            Sync</strong> (Privacy-first Health App with local encryption).</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="item-header">
-                    <span class="item-title">Freelance Full Stack Developer</span>
-                    <span class="item-date">2021 – Present</span>
-                </div>
-                <ul>
-                    <li>Built and scaled custom multi-branch inventory systems (Hanaka Hardware) with real-time stock
-                        synchronization and local-first encryption.</li>
-                    <li>Consulted on technical SEO and payment gateway integrations (Paynow/Stripe) for various
-                        ecommerce startups.</li>
+                    <li>Engineered and deployed <strong>LatterPay</strong> (WhatsApp donation bot) and <strong>Axion
+                            Sync</strong> (Local-first health encryption).</li>
+                    <li>Scaled enterprise email deliverability from 30% to 98% via advanced SPF/DKIM/DMARC
+                        orchestration.</li>
+                    <li>Architected resilient DNS infrastructures with Cloudflare Shield edge security for
+                        high-availability production environments.</li>
                 </ul>
             </div>
         </section>
 
         <section>
-            <h2>Featured Projects</h2>
+            <h2>Selected Technical Projects</h2>
             <div class="experience-item">
                 <div class="item-header">
-                    <span class="item-title">Hanaka Hardware & Axion Sync</span>
+                    <span class="item-title">Hanaka Hardware Multi-Node Inventory</span>
                 </div>
                 <p>
-                    Developed a resilient multi-branch inventory system featuring real-time synchronization across
-                    nodes. Architected Axion Sync, a privacy-focused health tracker utilizing industry-standard
-                    local-first encryption for sensitive data protection.
+                    Developed a real-time multi-branch inventory system using Supabase subscriptions to synchronize
+                    stock across 5+ locations, resolving a decade-long inventory discrepancy issue for local hardware
+                    chains.
                 </p>
             </div>
-            <div class="experience-item" style="margin-top: 4px;">
+            <div class="experience-item">
                 <div class="item-header">
-                    <span class="item-title">LatterPay WhatsApp Integration</span>
+                    <span class="item-title">AI Plant Triage Diagnosis Tool</span>
                 </div>
                 <p>
-                    Engineered a secure WhatsApp-based payment bridge utilizing the Paynow API, enabling seamless mobile
-                    transactions for informal markets.
+                    Engineered an AI-driven plant health assistant utilizing GPT-4 Vision and sophisticated prompt
+                    caching for high-accuracy organic gardening support.
                 </p>
             </div>
         </section>
 
         <div class="bottom-grid">
-            <section>
-                <h2>Core Competencies</h2>
-                <div class="skills-list">
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">Flask</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">React</span>
-                    <span class="skill-tag">Tailwind CSS</span>
-                    <span class="skill-tag">Supabase</span>
-                    <span class="skill-tag">Docker</span>
-                    <span class="skill-tag">Terraform</span>
-                    <span class="skill-tag">Cloudflare</span>
-                    <span class="skill-tag">WhatsApp API</span>
-                    <span class="skill-tag">Payment Gateways</span>
-                    <span class="skill-tag">DNS Resilience</span>
-                </div>
-            </section>
-
-            <section>
-                <h2>Education & Leadership</h2>
-                <div class="experience-item" style="margin-bottom: 4px;">
-                    <div class="item-header">
-                        <span class="item-title">BSc Hons. Computer Engineering</span>
-                        <span class="item-date">Graduating 2026</span>
+            <div class="grid-left">
+                <section>
+                    <h2>Languages & Frameworks</h2>
+                    <div class="skills-list">
+                        <span class="skill-tag">Python (Flask/Django)</span>
+                        <span class="skill-tag">JavaScript (React/Next.js)</span>
+                        <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">PHP</span>
+                        <span class="skill-tag">SQL (PostgreSQL/MySQL)</span>
+                        <span class="skill-tag">Tailwind CSS</span>
+                        <span class="skill-tag">Supabase</span>
                     </div>
-                    <div class="item-org">Chinhoyi University of Technology</div>
-                </div>
-                <p style="font-size: 10px;">
-                    <strong>Leadership:</strong> Stakeholder Management, Technical Bridging, QA Standards, Project
-                    Lifecycle Management.
-                </p>
-                <p
-                    style="margin-top: 4px; font-weight: 700; color: var(--cv-accent); font-size: 9px; text-transform: uppercase; text-align: center;">
-                    "Logic for Today. Legacy for Tomorrow."
-                </p>
-            </section>
+                </section>
+
+                <section>
+                    <h2>Certifications</h2>
+                    <div class="skills-list">
+                        <span class="skill-tag">DevOps: Beginner to Advanced (Udemy)</span>
+                        <span class="skill-tag">Introduction to Java (Oracle / LinkedIn)</span>
+                    </div>
+                </section>
+            </div>
+
+            <div class="grid-right">
+                <section>
+                    <h2>Education</h2>
+                    <div class="experience-item">
+                        <div class="item-header">
+                            <span class="item-title">BSc Hons. Computer Engineering</span>
+                        </div>
+                        <div class="item-org">Chinhoyi University of Technology</div>
+                        <div class="item-date">Graduating Dec 2026</div>
+                    </div>
+                    <ul>
+                        <li>Major: Systems Architecture</li>
+                        <li>Research: Distributed Systems & Cryptography</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Core Tools</h2>
+                    <div class="skills-list">
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Terraform</span>
+                        <span class="skill-tag">Git/GitHub</span>
+                        <span class="skill-tag">Cloudflare</span>
+                        <span class="skill-tag">Linux/UNIX Admin</span>
+                    </div>
+                </section>
+            </div>
         </div>
+
+        <footer>
+            <div style="font-weight: 800; color: var(--cv-accent); letter-spacing: 0.1em; text-transform: uppercase;">
+                "Logic for Today. Legacy for Tomorrow."
+            </div>
+        </footer>
     </div>
 
     <button class="print-btn" onclick="window.print()" title="Save CV as PDF">
