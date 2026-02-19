@@ -195,23 +195,15 @@
         </section>
 
         <section class="project-section">
-            <h2>Key Challenges</h2>
-            <div class="challenge-box">
-                <h3>Real-time Synchronization</h3>
-                <p style="color:var(--text2)">
-                    Maintaining accurate stock levels across multiple branch locations while users are making
-                    simultaneous purchases was a significant technical challenge. I knew that even a single error
-                    in stock counts could lead to poor customer experiences and lost trust.
-                </p>
-            </div>
-            <div class="solution-box">
-                <h3>The Solution</h3>
-                <p style="color:var(--text2)">
-                    I implemented Supabase Postgres triggers and real time subscriptions to solve this. Every time a
-                    checkout begins, the system protects the specific inventory record and uses a broadcast channel
-                    to update all connected clients instantly, ensuring everyone sees the exact truth.
-                </p>
-            </div>
+            <h2>The Challenge of Synchronization</h2>
+            <p style="color:var(--text2);font-size:1.05rem;line-height:1.8">
+                Maintaining accurate stock levels across multiple branch locations while users are making
+                simultaneous purchases was a significant technical hurdle. I recognized that even a single discrepancy
+                could erode customer trust and disrupt the heart of the business.
+            </p>
+            <p style="color:var(--text2);font-size:1.05rem;line-height:1.8; margin-top:20px;">
+                To ensure a single, breathing source of truth, I implemented <strong>Supabase Postgres triggers and real-time subscriptions</strong>. Every time a checkout begins, the system protects the specific inventory record and uses a broadcast channel to update all connected clients instantly, ensuring that both merchants and customers see the exact truth at all times.
+            </p>
         </section>
 
         <section class="project-section">
