@@ -145,6 +145,20 @@
             transform: translateY(-2px);
         }
 
+        .cv-back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--cv-accent);
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 20px;
+        }
+
+        .cv-back-link:hover {
+            opacity: 0.8;
+        }
+
         @media print {
 
             .print-btn,
@@ -167,6 +181,12 @@
 
 <body class="cv-page">
     <div class="cv-container">
+        <a href="index.html" class="cv-back-link">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+            Back to Portfolio
+        </a>
         <header class="cv-header">
             <div class="cv-name">
                 <h1>Nyasha Mapetere</h1>
@@ -205,6 +225,11 @@
                     <h3>Specializations</h3>
                     <p class="cv-item-desc">WhatsApp API Integration, Payment Gateways (Paynow), Technical SEO, DNS
                         Resilience.</p>
+                </div>
+                <div class="skill-group">
+                    <h3>Leadership</h3>
+                    <p class="cv-item-desc">Stakeholder Management, Technical Bridging, QA Standards, Project Lifecycle
+                        Management.</p>
                 </div>
             </div>
         </section>
