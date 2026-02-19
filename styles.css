@@ -1150,26 +1150,46 @@ section {
 }
 
 .skill-items {
-    display: grid;
-    gap: 16px
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
 }
 
 .skill-item {
     display: flex;
     align-items: center;
-    gap: 12px;
-    padding: 12px 16px;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
     background: rgba(6, 78, 59, 0.03);
-    border-radius: 12px;
-    transition: all .3s ease;
-    border: 1px solid transparent
+    border-radius: 16px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(6, 78, 59, 0.05);
+    cursor: help;
 }
 
 .skill-item:hover {
     background: #fff;
     border-color: var(--primary);
-    transform: translateX(8px);
-    box-shadow: 0 4px 12px rgba(6, 78, 59, 0.05)
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(6, 78, 59, 0.1);
+}
+
+.skill-item .tech-icon {
+    width: 28px;
+    height: 28px;
+    filter: none;
+    opacity: 1;
+}
+
+/* Override for "Currently Mastering" section which has text labels */
+.skills-grid .skill-item {
+    width: auto;
+    height: auto;
+    justify-content: flex-start;
+    padding: 12px 16px;
+    gap: 12px;
 }
 
 .skill-icon {
