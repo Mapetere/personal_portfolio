@@ -4,20 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV | Nyasha Praise Mapetere</title>
+    <title>CV | Nyasha Mapetere</title>
     <link rel="icon" type="image/png" href="images/favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Caveat:wght@400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <style>t
+    <style>
         :root {
             --cv-bg: #ffffff;
-            --cv-text: #111827;
-            --cv-text2: #374151;
-            --cv-accent: #0d9488;
-            --cv-border: #f3f4f6;
+            --cv-text: #000000;
+            --cv-text2: #000000;
+            --cv-accent: #000000;
+            --cv-border: #e5e7eb;
         }
 
         /* Fixed A4 Page Logic for 1-Page PDF Guarantee */
@@ -35,7 +35,7 @@
             width: 210mm;
             height: 297mm;
             background: #fff;
-            padding: 15mm;
+            padding: 10mm;
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
             position: relative;
             display: flex;
@@ -59,14 +59,14 @@
         header {
             border-bottom: 2px solid var(--cv-accent);
             padding-bottom: 8px;
-            margin-bottom: 18px;
+            margin-bottom: 12px;
             display: flex;
             justify-content: space-between;
             align-items: flex-end;
         }
 
         .header-left h1 {
-            font-size: 24px;
+            font-size: 18px;
             margin: 0;
             line-height: 1;
             font-weight: 800;
@@ -75,7 +75,7 @@
         }
 
         .cv-subtitle {
-            font-size: 13px;
+            font-size: 10px;
             color: var(--cv-accent);
             font-weight: 700;
             margin-top: 4px;
@@ -85,7 +85,7 @@
 
         .contact-info {
             text-align: right;
-            font-size: 10px;
+            font-size: 8.5px;
             color: var(--cv-text2);
             line-height: 1.4;
         }
@@ -96,7 +96,7 @@
         }
 
         section {
-            margin-bottom: 50px;
+            margin-bottom: 10px;
             padding: 0;
             /* Reset global padding */
         }
@@ -106,9 +106,9 @@
             text-transform: uppercase;
             letter-spacing: 0.08em;
             color: var(--cv-accent);
-            margin-bottom: 4px;
+            margin-bottom: 2px;
             background: #f9fafb;
-            padding: 2px 8px;
+            padding: 1px 8px;
             border-left: 3px solid var(--cv-accent);
             font-weight: 800;
         }
@@ -116,14 +116,14 @@
         p,
         .cv-item-desc {
             font-size: 10px;
-            line-height: 1.4;
+            line-height: 1.3;
             color: var(--cv-text2);
             text-align: justify;
             margin: 0;
         }
 
         .experience-item {
-            margin-bottom: 16px;
+            margin-bottom: 6px;
         }
 
         .item-header {
@@ -151,22 +151,22 @@
         }
 
         ul {
-            margin: 8px 0 0 20px;
+            margin: 2px 0 0 12px;
             padding: 0;
         }
 
         li {
             font-size: 9.8px;
             color: var(--cv-text2);
-            line-height: 1.4;
-            margin-bottom: 2px;
+            line-height: 1.3;
+            margin-bottom: 1.5px;
         }
 
         .bottom-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 25px;
-            margin-top: 5px;
+            gap: 15px;
+            margin-top: 0px;
         }
 
         .skills-list {
@@ -186,7 +186,15 @@
             font-weight: 600;
         }
 
-       
+        footer {
+            margin-top: auto;
+            text-align: center;
+            border-top: 1px solid var(--cv-border);
+            padding-top: 8px;
+            font-size: 10px;
+            color: var(--cv-text2);
+        }
+
         .print-btn {
             position: fixed;
             bottom: 30px;
@@ -254,7 +262,7 @@
                 <div class="cv-subtitle">Software Engineer & Systems Architect</div>
             </div>
             <div class="contact-info">
-                <div>781 Mt Pleasant Heights Harare, Zimbabwe • mapeterenyasha@gmail.com • 0774694160 </div>
+                <div>159 Izayi Park Zvishavane • mapeterenyasha@gmail.com • 0774694160</div>
                 <div>
                     <a href="https://linkedin.com/in/nyashamapetere" target="_blank">linkedin.com/in/nyashamapetere</a>
                     •
@@ -266,10 +274,7 @@
         <section>
             <h2>Professional Summary</h2>
             <p>
-                Highly analytical 5th year Computer Engineering student with experience in architecting
-                robust digital systems. Junior engineer in full stack development,  Agile methodologies, specialized in WhatsApp API integrations,
-                secure payment bridges Quality Assurance and enterprise grade DNS resilience. Proven track record of managing technical
-                lifecycles and bridging complex engineering logic with mission critical business objectives.
+                Computer Engineer with a First Class Degree and experience in software development, DevOps and systems implementation. I enjoy solving complex problems, learning new technologies and building solutions that create real value. Known for being dependable, analytical and quick to adapt, I work well in both technical and collaborative environments and am always looking for ways to improve systems and processes.
             </p>
         </section>
 
@@ -277,49 +282,61 @@
             <h2>Professional Experience</h2>
             <div class="experience-item">
                 <div class="item-header">
-                    <span class="item-title">Software Engineering Intern(QA & Systems Analyst) | Afrosoft</span>
+                    <span class="item-title">Software Engineering Intern (QA & Systems Analyst) | Afrosoft</span>
                     <span class="item-date">Sep 2024 – Aug 2025</span>
                 </div>
-               <ul>
-                  <li>Architected enterprise-grade CI/CD pipelines in Jenkins and authored custom Docker configurations for containerized deployment of Java microservices, including the NRZ Biometrics System, improving deployment efficiency by 45%.</li>
-                  <li>Audited enterprise Java source code alongside senior developers; directly identified and resolved a critical financial logic bug where brokerage fees were being double-calculated on live schemas.</li>
-    
-                  <li>Functioned as the sole QA Engineer for the ZDF Loans and Finance Manager system, executing rigorous integration testing to guarantee a flawless, on-time production deployment.</li>
-                  <li>Executed comprehensive functional testing for the TIC project and coordinated User Acceptance Testing (UAT) for the Zambezi Core System to validate business logic workflows against client specifications.</li>
-    
-                  <li>Facilitated daily cross-functional Scrum sessions for both the TIC and ZDF project teams to maintain sprint alignment, unblock development bottlenecks, and track milestone velocities.</li>
-                  <li>Spearheaded client-facing progression sessions with the TIC stakeholders to gather feedback, translate requirements into testable specifications, and systematically prepare for production readiness.</li>
-                  <li>Collaborated with senior architects to ensure 100% compliance with corporate financial security and software delivery standards.</li>
-              </ul>
-
+                <ul>
+                    <li>Architected enterprise-grade pipelines in Jenkins for auto-deployment in Java projects like the NRZ Biometrics System, improving system efficiency by 45%.</li>
+                    <li>Functioned as the sole QA Engineer for the ZDF Loans and Finance Manager system, executing rigorous integration testing to guarantee a flawless, on-time production deployment.</li>
+                    <li>Translated complex, non-technical user requirements into structured technical specifications, transforming client needs into testable Java-centric backend business logic.</li>
+                    <li>Spearheaded end-to-end task tracking, project management, and cross-functional milestone coordination for the ZDF project modules to meet strict institutional deadlines.</li>
+                    <li>Collaborated with senior architects to ensure 100% compliance with financial security standards for the ZDF Loans and Finance Manager System files.</li>
+                </ul>
             </div>
 
-            
+            <div class="experience-item">
+                <div class="item-header">
+                    <span class="item-title">Freelance Software Architect</span>
+                    <span class="item-date">2023 – Present</span>
+                </div>
+                <ul>
+                    <li>Architecting the <strong>Hanaka</strong> e-commerce platform for a commercial hardware retailer, engineering a highly concurrent Java Spring Boot and MySQL backend.</li>
+                    <li>Implemented robust bucket storage pipelines for product media and orchestrated end-to-end WBS deployment, managing domain provisioning and guaranteeing high availability under traffic load.</li>
+                    <li>Scaled enterprise email deliverability from 30% to 98% via advanced SPF/DKIM/DMARC
+                        orchestration.</li>
+                    <li>Architected resilient DNS infrastructures with Cloudflare Shield edge security for
+                        high-availability production environments.</li>
+                </ul>
+            </div>
         </section>
 
         <section>
             <h2>Selected Technical Projects</h2>
             <div class="experience-item">
                 <div class="item-header">
-                    <span class="item-title">Latterpay | November 2024 - February 2025</span>
+                    <span class="item-title">ZET-5 Automated Energy Priority System (Final Year Dissertation)</span>
                 </div>
-                <p>
-                    Engineered a Whatsapp Chatbot in Python 3  utilizing the Meta Developers API and sophisticated session
-                    handling for high accuracy online payemnts via the PayNow API and a highly user friendly registration 
-                    system.This systemis on my github page for further analysis of the codebase.
-                </p>
+                <ul>
+                    <li>Designed and developed a Software-in-the-Loop (SIL) energy tracking and predictive load-shedding controller utilizing modern JavaScript, React 19.1, Vite, WebSockets, and LocalStorage.</li>
+                    <li>Engineered an offline, edge-hosted React dashboard that updates every 1.5 seconds independently of cloud reliance.</li>
+                    <li>Implemented an Exponential Moving Average (EMA) algorithm to create a Hybrid Reconciliation Loop, reducing simulated hardware integration drift from 15% to 0.4%.</li>
+                    <li>Developed an O(1) time-complexity priority engine that autonomously preserves essential loads during token depletion.</li>
+                </ul>
             </div>
 
             <div class="experience-item">
                 <div class="item-header">
-                    <span class="item-title">ZET-5 | 2026 </span>
+                    <span class="item-title">Kazizi Intelligent OBD-II Edge Diagnostic System (Engineering Design & Make Project)</span>
                 </div>
-                <p>
-                    Developed a real time predictive energymonitoring and load prioritization prototype system designed to 
-                    optimize ZESA prepaid electricity token distribution.Engineered a custom programmatic engie to ingest and parse
-                    real time telemetry data streams , implementing scheduling and predictive prioritization algorithms to optimizeload efficiency
-                    under high constraint environments.This system is readily available for a demo upon request.
-                </p>
+                <ul>
+                    <li>Architected an offline-first vehicle edge node in Rust utilizing Tokio, achieving a strict 10Hz real-time CAN bus polling deadline and a microscopic 1.84MB memory footprint while processing over 489,000 frames without data loss.</li>
+                    <li>Engineered a cross-platform Flutter/Dart mobile application featuring live 3D vehicle rendering and WebSocket telemetry streaming, leveraging local SQLite for massive offline drive logging.</li>
+                    <li>Designed embedded hardware integration linking a Raspberry Pi 5 to an MCP2515 CAN HAT via SPI; managed PCB layout and fabrication processes with KiCAD and simulated electrical thresholds using LTSpice.</li>
+                    <li>Configured the Raspberry Pi environment for local control via a direct connected-monitor interface, and administered network configurations securely over SSH.</li>
+                    <li>Secured cloud-based Python batch processing for unsupervised ML feature discovery by implementing Ed25519 elliptic-curve digital signatures, comprehensively preventing malicious code injection.</li>
+                </ul>
+            </div>
+
         </section>
 
         <div class="bottom-grid">
@@ -328,12 +345,41 @@
                     <h2>Languages & Frameworks</h2>
                     <div class="skills-list">
                         <span class="skill-tag">Python (Flask/Django)</span>
-                        <span class="skill-tag">JavaScript (React/Next.js)</span>
+                        <span class="skill-tag">Rust</span>
+                        <span class="skill-tag">Java (Spring Boot)</span>
+                        <span class="skill-tag">JavaScript (React 19.1/Vite)</span>
                         <span class="skill-tag">TypeScript</span>
+                        <span class="skill-tag">Dart (Flutter)</span>
                         <span class="skill-tag">PHP</span>
-                        <span class="skill-tag">SQL (PostgreSQL/MySQL)</span>
+                        <span class="skill-tag">SQL (PostgreSQL/MySQL/SQLite)</span>
                         <span class="skill-tag">Tailwind CSS</span>
                         <span class="skill-tag">Supabase</span>
+                        <span class="skill-tag">Tokio</span>
+                        <span class="skill-tag">WebSockets</span>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Core Tools & Infrastructure</h2>
+                    <div class="skills-list">
+                        <span class="skill-tag">WBS Deployment</span>
+                        <span class="skill-tag">Cloud Object Storage</span>
+                        <span class="skill-tag">Ed25519 Cryptography</span>
+                        <span class="skill-tag">LocalStorage</span>
+                        <span class="skill-tag">Raspberry Pi</span>
+                        <span class="skill-tag">KiCAD</span>
+                        <span class="skill-tag">LTSpice</span>
+                        <span class="skill-tag">SSH</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Terraform</span>
+                        <span class="skill-tag">Git/GitHub</span>
+                        <span class="skill-tag">Jenkins</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">Cloudflare</span>
+                        <span class="skill-tag">Linux/UNIX Admin</span>
+                        <span class="skill-tag">Linux SocketCAN</span>
+                        <span class="skill-tag">OBD-II/CAN Bus</span>
+                        <span class="skill-tag">SPI</span>
                     </div>
                 </section>
 
@@ -348,12 +394,22 @@
 
             <div class="grid-right">
                 <section>
-                    <h2>Education</h2>
+                    <h2>Education & Training</h2>
                     <div class="experience-item">
                         <div class="item-header">
                             <span class="item-title">BEng (Hons) Computer Engineering</span>
                         </div>
-                        <div class="item-org">Chinhoyi University of Technology | Graduating August 2026</div>
+                        <div class="item-org">Chinhoyi University of Technology</div>
+                        <div class="item-date" style="font-size: 10px;">Graduating August 2026</div>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="item-header">
+                            <span class="item-title">Intensive Software Training</span>
+                        </div>
+                        <div class="item-org">She Code</div>
+                        <div class="item-date" style="font-size: 10px;">March 2026</div>
+                        <p style="font-size: 9px; line-height: 1.2;">Focused on live portfolio and CV design.</p>
                     </div>
 
                     <div class="experience-item" style="margin-bottom: 2px;">
@@ -374,21 +430,18 @@
                 </section>
 
                 <section>
-                    <h2>Core Tools</h2>
-                    <div class="skills-list">
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Terraform</span>
-                        <span class="skill-tag">Git/GitHub</span>
-                        <span class="skill-tag">Cloudflare</span>
-                        <span class="skill-tag">Linux/UNIX Admin</span>
-                        <span class="skill-tag">Jenkins</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">Java</span>
+                    <h2>References</h2>
+                    <div class="experience-item" style="margin-bottom: 2px;">
+                        <div class="item-header">
+                            <span class="item-title">Mr Mutiswa</span>
+                        </div>
+                        <div class="item-org">Project Manager, Afrosoft Holdings</div>
+                        <p style="font-size: 9px; line-height: 1.2;">+263 71 503 0783</p>
                     </div>
                 </section>
             </div>
         </div>
-
+    </div>
 
     <button class="print-btn" onclick="window.print()" title="Save CV as PDF">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -397,6 +450,6 @@
         </svg>
         Save as PDF
     </button>
-</body>y
+</body>
 
 </html>
