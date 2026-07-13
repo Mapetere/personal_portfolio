@@ -12,7 +12,7 @@ window.addEventListener('load', function () {
 });
 
 // Typewriter effect
-const roles = ['Junior Software Engineer  ', 'Technical Account Specialist  ', 'Cybersecurity Analyst  '];
+const roles = ['Technical Account Specialist  ', 'Network & Infrastructure Engineer  ', 'Cybersecurity Analyst  '];
 let roleIndex = 0, charIndex = 0, isDeleting = false;
 const typewriter = document.querySelector('.typewriter');
 
